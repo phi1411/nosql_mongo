@@ -1,116 +1,138 @@
-# HỆ THỐNG QUẢN LÝ SINH VIÊN VỚI MONGODB & C# .NET 9 WPF
+# ĐỒ ÁN: XÂY DỰNG ỨNG DỤNG QUẢN LÝ SINH VIÊN VỚI MONGODB
 
-Dự án ứng dụng Desktop quản lý sinh viên hiện đại sử dụng **C# .NET 9 (WPF)** kết nối cơ sở dữ liệu **MongoDB Atlas**, đáp ứng đầy đủ 100% các tiêu chí kỹ thuật và thang điểm 10/10.
-
----
-
-## 📑 BẢNG ÁNH XẠ TIÊU CHÍ CHẤM ĐIỂM (10 ĐIỂM)
-
-| STT | Tiêu chí | Điểm | Cách triển khai trong mã nguồn |
-| :---: | :--- | :---: | :--- |
-| **1** | **Kiến trúc & Quản lý kết nối** | **1.0** | - Driver chính thức `MongoDB.Driver` 3.x<br>- Thiết kế mẫu **Singleton Pattern** trong `MongoDbService.cs`<br>- Đọc chuỗi kết nối từ `appsettings.json` |
-| **2** | **Thiết kế Giao diện & Xử lý Dữ liệu Động** | **2.0** | - Form nhập liệu cố định: Mã SV, Họ tên, Tuổi, Giới tính, Mã lớp<br>- Nút `[+] Thêm Ngoại ngữ`: mở dialog thêm ngoại ngữ (`$addToSet`)<br>- Nút `[+] Thêm Môn học`: nhập bộ 3 (Mã môn, Tên môn, Điểm số $0 \to 10$)<br>- Hỗ trợ lưu sinh viên với mảng `ngoaingu` hoặc `monhoc` rỗng `[]` |
-| **3** | **Thao tác CRUD Cơ bản** | **2.5** | - Thêm mới 1 SV (`insertOne`)<br>- Tải danh sách lên DataGrid, tìm kiếm theo `masv`, lọc theo `malop`<br>- Cập nhật thông tin cơ bản theo `masv` (`updateOne` với `$set`)<br>- Xóa 1 SV (`deleteOne`) và xóa hàng loạt theo lớp (`deleteMany`) |
-| **4** | **Xử lý Mảng Nâng cao & Thay thế Document** | **1.5** | - Thêm phần tử vào mảng sau: `$push` môn học / `$addToSet` ngoại ngữ<br>- Cập nhật điểm môn học bằng **Positional Operator `$`** (`monhoc.$.diem`)<br>- Thay thế toàn bộ document theo `_id` (`replaceOne`) |
-| **5** | **Dashboard & Báo Cáo Thống Kê** | **2.0** | Màn hình Dashboard riêng biệt sử dụng **MongoDB Aggregation Framework**:<br>- **KPI Cards**: Tổng SV, Tổng lớp, GPA toàn trường (`$unwind` + `$avg`), Tỷ lệ Nam/Nữ (`$group`)<br>- **Thống kê theo lớp**: Mã lớp, Sĩ số, Max GPA, Min GPA (`$group`)<br>- **Độ phổ biến ngoại ngữ**: `$unwind`, `$group`, `$sort` giảm dần<br>- **Top 5 SV**: `$sort` desc, `$limit: 5`<br>- **Phân loại học lực**: Xuất sắc ($\ge 8.5$), Giỏi ($7.0 \to < 8.5$), Khá ($5.5 \to < 7.0$), TB/Yếu ($< 5.5$) |
-| **6** | **Tối ưu hóa & Đánh Index** | **1.0** | - Tự động tạo Index khi ứng dụng khởi chạy:<br>  + **Unique Index** cho trường `masv`<br>  + **Compound Index** cho `{ malop: 1, hoten: 1 }`<br>- Bắt ngoại lệ `MongoWriteException` (Code 11000) khi trùng `masv` |
-| **-** | **Validation & Dữ liệu Seed** | **Cộng** | - Validate điểm số $0.0 \to 10.0$, tuổi $> 0$<br>- Hộp thoại xác nhận trước khi xóa<br>- Bộ dữ liệu mẫu `data_seed.json` gồm 18 sinh viên chuẩn thực tế |
+Ứng dụng Desktop quản lý sinh viên được xây dựng bằng ngôn ngữ **C# (.NET 9 WPF)** kết hợp với hệ quản trị cơ sở dữ liệu **MongoDB**.
 
 ---
 
-## 🛠️ HƯỚNG DẪN CẤU HÌNH & CHẠY ỨNG DỤNG
+## 1. Giới thiệu tổng quan
 
-### 1. Yêu cầu môi trường
-- HĐH: Windows 10/11
-- .NET SDK: **.NET 9.0** trở lên (kiểm tra bằng `dotnet --version`)
-- Kết nối mạng Internet (để kết nối đến MongoDB Atlas Cloud)
+Hệ thống cung cấp giải pháp quản lý thông tin sinh viên toàn diện, tận dụng các ưu điểm của mô hình dữ liệu dạng tài liệu (Document-oriented NoSQL) của MongoDB. Ứng dụng hỗ trợ lưu trữ cấu trúc phân cấp phức tạp (mảng nhúng môn học, danh sách ngoại ngữ), thao tác dữ liệu nâng cao với các toán tử mảng, và trực quan hóa số liệu qua màn hình Dashboard sử dụng Aggregation Pipeline.
 
-### 2. Cấu hình Connection String
-Mở file `appsettings.json` tại thư mục gốc của dự án:
+---
+
+## 2. Công nghệ phát triển
+
+- **Ngôn ngữ & Nền tảng**: C# (.NET 9.0) - Windows Presentation Foundation (WPF)
+- **Hệ quản trị CSDL**: MongoDB Atlas (MongoDB 5.0+)
+- **Thư viện Driver**: `MongoDB.Driver` (v3.11.0)
+- **Kiến trúc kết nối**: Singleton Pattern cho `MongoClient` và `IMongoDatabase`
+- **Quản lý cấu hình**: `appsettings.json`
+
+---
+
+## 3. Thiết kế CSDL & Cấu trúc Document
+
+Hệ thống sử dụng database `qlsinhvien_db` và collection `sinhvien`. Mỗi sinh viên được lưu trữ dưới dạng một Document với cấu trúc mảng nhúng:
+
+```json
+{
+  "_id": ObjectId("64f1a2b3c4d5e6f7a8b9c0d1"),
+  "masv": "sv001",
+  "hoten": "Nguyễn Văn An",
+  "tuoi": 20,
+  "phai": "Nam",
+  "malop": "l01",
+  "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+  "monhoc": [
+    {
+      "mamon": "csdl",
+      "tenmon": "Cơ sở dữ liệu",
+      "diem": 8.5
+    },
+    {
+      "mamon": "laptrinh",
+      "tenmon": "Lập trình Cơ bản",
+      "diem": 7.0
+    }
+  ]
+}
+```
+
+---
+
+## 4. Các chức năng chính
+
+### 4.1. Quản lý Sinh viên (CRUD Cơ bản & Nâng cao)
+- **Thêm mới (`insertOne`)**: Tạo mới sinh viên với đầy đủ thông tin hoặc khởi tạo với mảng rỗng `[]` để bổ sung sau.
+- **Tìm kiếm & Lọc**: Tìm kiếm sinh viên theo Mã SV (`masv`) và lọc danh sách sinh viên theo Lớp (`malop`).
+- **Cập nhật thông tin cơ bản (`updateOne` với `$set`)**: Cập nhật họ tên, tuổi, phái, mã lớp.
+- **Thay thế Document (`replaceOne`)**: Thay thế toàn bộ nội dung document dựa theo `_id`.
+- **Xóa dữ liệu**:
+  - Xóa 1 sinh viên được chọn (`deleteOne`).
+  - Xóa toàn bộ sinh viên thuộc một lớp cụ thể (`deleteMany`).
+
+### 4.2. Thao tác Mảng Động & Positional Operator
+- **Thêm phần tử vào mảng**: Bổ sung ngoại ngữ mới (`$addToSet` / `$push`) hoặc môn học mới (`$push`) cho sinh viên đã có trong CSDL.
+- **Cập nhật phần tử trong mảng**: Sửa điểm số của một môn học cụ thể dựa vào `masv` và `mamon` bằng toán tử **Positional Operator (`$`)** mà không cần thay thế cả document.
+
+### 4.3. Dashboard & Báo cáo Thống kê (Aggregation Framework)
+- **KPI Cards**:
+  - Tổng số sinh viên hiện có
+  - Tổng số lớp học khác nhau
+  - Điểm trung bình toàn trường (tính gộp từ tất cả môn học của toàn bộ sinh viên bằng `$unwind` và `$avg`)
+  - Tỷ lệ phần trăm giới tính Nam / Nữ (`$group`)
+- **Thống kê theo Lớp**: Mã lớp, Sĩ số, Điểm TB cao nhất, Điểm TB thấp nhất (`$group`).
+- **Thống kê Ngoại ngữ**: Đếm số lượng sinh viên theo từng ngoại ngữ (`$unwind` $\to$ `$group` $\to$ `$sort` desc).
+- **Bảng xếp hạng Top 5**: Top 5 sinh viên có điểm TB cao nhất trường (`$sort` $\to$ `$limit: 5`).
+- **Phân loại Học lực**: Thống kê số lượng và tỷ lệ % sinh viên theo các mức: Xuất sắc ($\ge 8.5$), Giỏi ($7.0 \to < 8.5$), Khá ($5.5 \to < 7.0$), Trung bình/Yếu ($< 5.5$).
+
+### 4.4. Tối ưu hóa & Đánh Index
+- Khởi tạo Index tự động khi ứng dụng khởi chạy:
+  - **Unique Index**: Áp dụng trên trường `masv` nhằm ngăn chặn trùng lặp mã sinh viên.
+  - **Compound Index**: Áp dụng trên cặp trường `{ malop: 1, hoten: 1 }` giúp tối ưu hóa truy vấn lọc và sắp xếp theo lớp.
+- Xử lý ngoại lệ `MongoWriteException` khi vi phạm Unique Index để thông báo lỗi rõ ràng.
+- Ràng buộc dữ liệu: Điểm số trong thang điểm $0.0 \to 10.0$, tuổi là số nguyên dương $> 0$.
+
+---
+
+## 5. Hướng dẫn Cài đặt & Chạy Ứng dụng
+
+### 5.1. Yêu cầu hệ thống
+- Hệ điều hành: Windows 10/11
+- .NET SDK: Phiên bản **.NET 9.0** trở lên
+
+### 5.2. Cấu hình chuỗi kết nối
+Mở tệp `appsettings.json` tại thư mục gốc của dự án và điền chuỗi kết nối MongoDB Atlas:
+
 ```json
 {
   "MongoDB": {
-    "ConnectionString": "mongodb+srv://nnp1426_db_user:<db_password>@cluster0.1ovaxuk.mongodb.net/?appName=Cluster0",
+    "ConnectionString": "mongodb+srv://<username>:<password>@cluster0.1ovaxuk.mongodb.net/?appName=Cluster0",
     "DatabaseName": "qlsinhvien_db",
     "CollectionName": "sinhvien"
   }
 }
 ```
-👉 **Thay thế `<db_password>`** bằng mật khẩu Database User MongoDB Atlas của bạn.
 
-### 3. Lệnh khởi chạy ứng dụng
-Mở Terminal / PowerShell tại thư mục dự án và chạy:
+### 5.3. Khởi chạy ứng dụng
+Mở terminal tại thư mục dự án và thực hiện lệnh:
+
 ```powershell
 dotnet run
 ```
 
----
-
-## 🚀 KỊCH BẢN DEMO & TRẢ LỜI VẤN ĐÁP KHI CHẤM THI
-
-Khi thầy cô kiểm tra trực tiếp ứng dụng, bạn có thể thực hiện theo đúng trình tự sau để đạt điểm tuyệt đối:
-
-### Bước 1: Nạp dữ liệu mẫu ban đầu
-- Trên thanh công cụ phía trên bên phải, bấm nút **`📥 Nạp Seed Data Mẫu`**.
-- Hệ thống sẽ tự động nạp **18 sinh viên** mẫu từ file `data_seed.json` vào MongoDB Atlas.
-
-### Bước 2: Demo CRUD cơ bản & Bộ lọc
-1. **Lọc theo lớp**: Chọn lớp `l01` trong ComboBox $\to$ Bảng chỉ hiện sinh viên lớp `l01`.
-2. **Tìm kiếm theo Mã SV**: Nhập `sv001` vào ô tìm kiếm $\to$ Bấm `🔍 Tìm Mã SV`.
-3. **Thêm mới sinh viên**:
-   - Bấm `🧹 Xóa trắng Form`.
-   - Nhập: Mã SV `sv099`, Họ tên `Lê Văn Thử Nghiệm`, Lớp `l01`, Tuổi `20`.
-   - Để trống mảng ngoại ngữ và môn học $\to$ Bấm `➕ Thêm mới (insertOne)` $\to$ Lưu thành công SV với 2 mảng rỗng `[]`.
-
-### Bước 3: Demo Thao tác Mảng động & Positional Operator ($)
-1. **Thêm ngoại ngữ động ($addToSet)**:
-   - Chọn sinh viên `sv099` vừa tạo trong danh sách.
-   - Bấm `[+] Thêm Ngoại Ngữ ($addToSet)` $\to$ Chọn `Tiếng Nhật` $\to$ Bấm Thêm. Ngoại ngữ được đẩy trực tiếp vào CSDL.
-2. **Thêm môn học động ($push)**:
-   - Bấm `[+] Thêm Môn ($push)` $\to$ Nhập Mã: `csdl`, Tên: `Cơ sở dữ liệu`, Điểm: `8.5` $\to$ Môn học được bổ sung vào CSDL.
-3. **Cập nhật điểm bằng Positional Operator ($)**:
-   - Chọn môn `csdl` trong bảng môn học $\to$ Bấm **`✏️ Sửa Điểm ($)`**.
-   - Sửa điểm từ `8.5` thành `10.0` $\to$ Cập nhật tức thì bằng toán tử `monhoc.$.diem`.
-
-### Bước 4: Demo Bắt lỗi Trùng Khóa (Unique Index)
-- Bấm `🧹 Xóa trắng Form`.
-- Nhập lại Mã SV `sv001` (đã có sẵn trong CSDL), Họ tên `Nguyễn Test Trùng`, Tuổi `20`, Lớp `l01`.
-- Bấm `➕ Thêm mới (insertOne)`.
-- Hệ thống sẽ chặn lại và hiển thị cảnh báo: **`Mã sinh viên 'sv001' đã tồn tại trong cơ sở dữ liệu!`** (Xử lý từ `MongoWriteException` mã 11000).
-
-### Bước 5: Demo Dashboard & Thống kê Aggregation
-- Chuyển sang Tab **`📊 Dashboard & Báo Cáo Thống Kê`**.
-- Thuyết minh với thầy:
-  - **4 KPI Cards**: Tổng SV, Tổng Lớp, Điểm TB gộp toàn trường, Tỷ lệ giới tính Nam/Nữ.
-  - **Thống kê theo lớp**: Nhóm theo `malop`, tính sĩ số, điểm Max, Min.
-  - **Thống kê ngoại ngữ**: Tách mảng bằng `$unwind`, gom nhóm `$group`, sắp xếp `$sort` giảm dần.
-  - **Top 5 Sinh viên**: Xếp hạng 5 SV có điểm TB cao nhất trường.
-  - **Phân loại học lực**: Phân bố tỷ lệ % Xuất sắc, Giỏi, Khá, Trung bình/Yếu.
-
-### Bước 6: Demo Xóa 1 SV và Xóa Cả Lớp (deleteMany)
-1. **Xóa 1 SV**: Chọn sinh viên `sv099` $\to$ Bấm `🗑️ Xóa SV (deleteOne)`.
-2. **Xóa cả lớp**: Trong ComboBox lọc, chọn lớp `l05` $\to$ Bấm `🗑️ Xóa Cả Lớp` $\to$ Tất cả SV lớp `l05` sẽ bị xóa đồng loạt bằng `deleteMany`.
+*(Hoặc mở file `StudentManagementApp.csproj` bằng Visual Studio 2022 và nhấn `F5`).*
 
 ---
 
-## 📂 CẤU TRÚC THƯ MỤC DỰ ÁN
+## 6. Cấu trúc Thư mục
 
 ```
 StudentManagementApp/
-├── appsettings.json                 # Cấu hình kết nối MongoDB Atlas
-├── data_seed.json                   # Dữ liệu kiểm thử mẫu (18 records)
-├── StudentManagementApp.csproj      # File cấu hình .NET 9 WPF
+├── appsettings.json                 # Cấu hình kết nối CSDL
+├── data_seed.json                   # Dữ liệu mẫu (18 sinh viên)
+├── StudentManagementApp.csproj      # File cấu hình dự án .NET
 ├── Models/
-│   ├── SinhVien.cs                  # Model Sinh viên (Bson mapping)
-│   ├── MonHoc.cs                    # Model Môn học
-│   └── DashboardModels.cs           # DTO cho Dashboard Aggregation
+│   ├── SinhVien.cs                  # Model ánh xạ BSON sinh viên
+│   ├── MonHoc.cs                    # Model môn học
+│   └── DashboardModels.cs           # Các DTO phục vụ Aggregation
 ├── Services/
-│   └── MongoDbService.cs            # Singleton Service kết nối & xử lý MongoDB
+│   └── MongoDbService.cs            # Xử lý kết nối Singleton & thao tác MongoDB
 ├── Views/
 │   ├── AddLanguageDialog.xaml/.cs   # Dialog thêm ngoại ngữ ($addToSet)
 │   ├── AddSubjectDialog.xaml/.cs    # Dialog thêm môn học ($push)
-│   └── UpdateSubjectGradeDialog.xaml/.cs # Dialog sửa điểm (Positional Operator $)
-├── MainWindow.xaml                  # Giao diện chính 2 Tab
+│   └── UpdateSubjectGradeDialog.xaml/.cs # Dialog sửa điểm (Positional $)
+├── MainWindow.xaml                  # Giao diện chính (Quản lý SV & Dashboard)
 ├── MainWindow.xaml.cs               # Xử lý sự kiện giao diện
-└── README.md                        # Hướng dẫn chi tiết & kịch bản chấm thi
+└── README.md                        # Tài liệu hướng dẫn đồ án
 ```
