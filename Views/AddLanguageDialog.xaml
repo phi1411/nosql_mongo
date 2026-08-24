@@ -1,0 +1,44 @@
+<Window x:Class="StudentManagementApp.Views.AddLanguageDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thêm Ngoại Ngữ Mới ($addToSet / $push)"
+        Height="250" Width="400"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#F8FAFC"
+        FontFamily="Segoe UI">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="🌐 Thêm Ngoại Ngữ Mới" FontSize="18" FontWeight="Bold" Foreground="#1E293B" Margin="0,0,0,8"/>
+        <TextBlock Grid.Row="1" Text="Nhập tên ngoại ngữ cần bổ sung cho sinh viên:" FontSize="13" Foreground="#64748B" Margin="0,0,0,12"/>
+
+        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+            <ComboBox x:Name="CboLanguagePreset" Height="34" Margin="0,0,0,8" SelectionChanged="CboLanguagePreset_SelectionChanged">
+                <ComboBoxItem Content="-- Chọn nhanh hoặc tự nhập bên dưới --" IsSelected="True"/>
+                <ComboBoxItem Content="Tiếng Anh"/>
+                <ComboBoxItem Content="Tiếng Nhật"/>
+                <ComboBoxItem Content="Tiếng Hàn"/>
+                <ComboBoxItem Content="Tiếng Trung"/>
+                <ComboBoxItem Content="Tiếng Pháp"/>
+                <ComboBoxItem Content="Tiếng Đức"/>
+                <ComboBoxItem Content="Tiếng Nga"/>
+                <ComboBoxItem Content="Tiếng Tây Ban Nha"/>
+            </ComboBox>
+            <TextBox x:Name="TxtLanguage" Height="34" VerticalContentAlignment="Center" Padding="8,0"
+                     FontSize="14" BorderBrush="#CBD5E1"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button Content="Hủy" Width="80" Height="32" Background="#E2E8F0" Foreground="#334155"
+                    BorderThickness="0" Margin="0,0,10,0" Click="BtnCancel_Click" Cursor="Hand"/>
+            <Button Content="Thêm vào CSDL" Width="120" Height="32" Background="#2563EB" Foreground="White"
+                    FontWeight="SemiBold" BorderThickness="0" Click="BtnOk_Click" Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,221 @@
+[
+  {
+    "masv": "sv001",
+    "hoten": "Nguyễn Văn An",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.0 },
+      { "mamon": "ctdl", "tenmon": "Cấu trúc dữ liệu", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv002",
+    "hoten": "Trần Thị Bích",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Pháp"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.5 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 9.0 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.8 }
+    ]
+  },
+  {
+    "masv": "sv003",
+    "hoten": "Lê Hoàng Cường",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.0 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.5 }
+    ]
+  },
+  {
+    "masv": "sv004",
+    "hoten": "Phạm Minh Đức",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": ["Tiếng Hàn", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
+      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 8.0 }
+    ]
+  },
+  {
+    "masv": "sv005",
+    "hoten": "Hoàng Thị Dung",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": ["Tiếng Trung", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.8 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.5 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv006",
+    "hoten": "Đỗ Văn Giang",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.0 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 4.5 }
+    ]
+  },
+  {
+    "masv": "sv007",
+    "hoten": "Vũ Thu Hà",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
+      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.5 }
+    ]
+  },
+  {
+    "masv": "sv008",
+    "hoten": "Ngô Quốc Hải",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Đức"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.0 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.5 },
+      { "mamon": "ctdl", "tenmon": "Cấu trúc dữ liệu", "diem": 6.5 }
+    ]
+  },
+  {
+    "masv": "sv009",
+    "hoten": "Bùi Mai Hương",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Hàn"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.8 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.2 }
+    ]
+  },
+  {
+    "masv": "sv010",
+    "hoten": "Đinh Tuấn Kiệt",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Trung"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 4.0 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.0 }
+    ]
+  },
+  {
+    "masv": "sv011",
+    "hoten": "Dương Thùy Linh",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 8.5 },
+      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv012",
+    "hoten": "Lý Văn Long",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.8 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.2 }
+    ]
+  },
+  {
+    "masv": "sv013",
+    "hoten": "Mai Trọng Nghĩa",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
+      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.5 }
+    ]
+  },
+  {
+    "masv": "sv014",
+    "hoten": "Phan Thị Oanh",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Pháp"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 },
+      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.5 }
+    ]
+  },
+  {
+    "masv": "sv015",
+    "hoten": "Trịnh Hoàng Phúc",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.5 },
+      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 6.0 }
+    ]
+  },
+  {
+    "masv": "sv016",
+    "hoten": "Vương Kim Phượng",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Trung", "Tiếng Hàn"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.8 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 8.2 }
+    ]
+  },
+  {
+    "masv": "sv017",
+    "hoten": "Tạ Quang Quân",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv018",
+    "hoten": "Lâm Thanh Sơn",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [],
+    "monhoc": []
+  }
+]
