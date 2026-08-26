@@ -120,7 +120,7 @@ dotnet run
 ```
 StudentManagementApp/
 ├── appsettings.json                 # Cấu hình kết nối CSDL
-├── data_seed.json                   # Dữ liệu mẫu (18 sinh viên)
+├── data_seed.json                   # Dữ liệu mẫu (200 sinh viên)
 ├── StudentManagementApp.csproj      # File cấu hình dự án .NET
 ├── Models/
 │   ├── SinhVien.cs                  # Model ánh xạ BSON sinh viên

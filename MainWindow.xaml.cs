@@ -620,7 +620,7 @@ namespace StudentManagementApp
         private async void BtnSeedData_Click(object sender, RoutedEventArgs e)
         {
             var confirm = MessageBox.Show(
-                "Bạn có muốn nạp dữ liệu mẫu từ tệp 'data_seed.json' (18 sinh viên) vào CSDL MongoDB không?\n\nLưu ý: Hành động này sẽ làm mới toàn bộ collection sinhvien!",
+                "Bạn có muốn nạp dữ liệu mẫu từ tệp 'data_seed.json' (200 sinh viên) vào CSDL MongoDB không?\n\nLưu ý: Hành động này sẽ làm mới toàn bộ collection sinhvien!",
                 "Xác nhận nạp dữ liệu mẫu",
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question);

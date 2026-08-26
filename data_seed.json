@@ -1,493 +1,5490 @@
 [
   {
     "masv": "sv001",
-    "hoten": "Nguyễn Văn An",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "hoten": "Nguyễn Bảo Huyền",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.0 },
-      { "mamon": "ctdl", "tenmon": "Cấu trúc dữ liệu", "diem": 9.0 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.8
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.5
+      }
     ]
   },
   {
     "masv": "sv002",
-    "hoten": "Trần Thị Bích",
-    "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Pháp"],
+    "hoten": "Phan Việt Thuận",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.5 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 9.0 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.8 }
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.8
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.3
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.4
+      }
     ]
   },
   {
     "masv": "sv003",
-    "hoten": "Lê Hoàng Cường",
-    "tuoi": 22,
+    "hoten": "Đỗ Trọng Phong",
+    "tuoi": 18,
     "phai": "Nam",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Anh"],
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.0 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.5 }
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 6.5
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.3
+      }
     ]
   },
   {
     "masv": "sv004",
-    "hoten": "Phạm Minh Đức",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Hàn", "Tiếng Anh"],
+    "hoten": "Phùng Thùy Châu",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
-      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 8.0 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 5.8
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.8
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.2
+      }
     ]
   },
   {
     "masv": "sv005",
-    "hoten": "Hoàng Thị Dung",
-    "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Trung", "Tiếng Anh"],
+    "hoten": "Lâm Thế Đạt",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.8 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.5 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 }
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 9.7
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.1
+      }
     ]
   },
   {
     "masv": "sv006",
-    "hoten": "Đỗ Văn Giang",
-    "tuoi": 23,
-    "phai": "Nam",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Anh"],
+    "hoten": "Chu Như Nhi",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.0 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 4.5 }
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.4
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.3
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.6
+      }
     ]
   },
   {
     "masv": "sv007",
-    "hoten": "Vũ Thu Hà",
-    "tuoi": 20,
+    "hoten": "Hồ Hồng Hương",
+    "tuoi": 19,
     "phai": "Nữ",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
-      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.5 }
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.7
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 5.6
+      }
     ]
   },
   {
     "masv": "sv008",
-    "hoten": "Ngô Quốc Hải",
-    "tuoi": 21,
+    "hoten": "Võ Việt An",
+    "tuoi": 23,
     "phai": "Nam",
-    "malop": "l01",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Đức"],
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.0 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.5 },
-      { "mamon": "ctdl", "tenmon": "Cấu trúc dữ liệu", "diem": 6.5 }
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.5
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.0
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.2
+      }
     ]
   },
   {
     "masv": "sv009",
-    "hoten": "Bùi Mai Hương",
+    "hoten": "Hà Khánh Vân",
     "tuoi": 22,
     "phai": "Nữ",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Hàn"],
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.8 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.2 }
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.8
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.0
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.4
+      }
     ]
   },
   {
     "masv": "sv010",
-    "hoten": "Đinh Tuấn Kiệt",
-    "tuoi": 20,
-    "phai": "Nam",
+    "hoten": "Vũ Ngọc Huyền",
+    "tuoi": 22,
+    "phai": "Nữ",
     "malop": "l02",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Trung"],
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 4.0 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.0 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.2
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.5
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.3
+      }
     ]
   },
   {
     "masv": "sv011",
-    "hoten": "Dương Thùy Linh",
-    "tuoi": 21,
+    "hoten": "Ngô Phương Thủy",
+    "tuoi": 23,
     "phai": "Nữ",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 8.5 },
-      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.0 }
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 6.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.1
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 5.1
+      }
     ]
   },
   {
     "masv": "sv012",
-    "hoten": "Lý Văn Long",
-    "tuoi": 22,
-    "phai": "Nam",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Anh"],
+    "hoten": "Trần Kim Diệp",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.8 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.2 }
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.3
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.6
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 9.5
+      }
     ]
   },
   {
     "masv": "sv013",
-    "hoten": "Mai Trọng Nghĩa",
-    "tuoi": 20,
-    "phai": "Nam",
+    "hoten": "Chu Tuyết Hoa",
+    "tuoi": 18,
+    "phai": "Nữ",
     "malop": "l02",
-    "ngoaingu": ["Tiếng Nhật"],
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
-      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.5 }
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.6
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.1
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 9.2
+      }
     ]
   },
   {
     "masv": "sv014",
-    "hoten": "Phan Thị Oanh",
+    "hoten": "Phan Hoàng Vũ",
     "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Pháp"],
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 },
-      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.5 }
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 9.8
+      }
     ]
   },
   {
     "masv": "sv015",
-    "hoten": "Trịnh Hoàng Phúc",
-    "tuoi": 23,
+    "hoten": "Đinh Việt An",
+    "tuoi": 18,
     "phai": "Nam",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Anh"],
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.5 },
-      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 6.0 }
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.4
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.8
+      }
     ]
   },
   {
     "masv": "sv016",
-    "hoten": "Vương Kim Phượng",
-    "tuoi": 20,
+    "hoten": "Dương Khánh Như",
+    "tuoi": 23,
     "phai": "Nữ",
-    "malop": "l02",
-    "ngoaingu": ["Tiếng Trung", "Tiếng Hàn"],
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.8 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 8.2 }
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.1
+      }
     ]
   },
   {
     "masv": "sv017",
-    "hoten": "Tạ Quang Quân",
-    "tuoi": 22,
-    "phai": "Nam",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "hoten": "Đoàn Mỹ Hằng",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.0 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.6
+      }
     ]
   },
   {
     "masv": "sv018",
-    "hoten": "Lâm Thanh Sơn",
+    "hoten": "Trần Lan Dung",
     "tuoi": 21,
-    "phai": "Nam",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Anh"],
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.5 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.0 }
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 5.8
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.4
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.5
+      }
     ]
   },
   {
     "masv": "sv019",
-    "hoten": "Nguyễn Hoàng Tiến",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Đức", "Tiếng Anh"],
+    "hoten": "Phạm Thùy Thủy",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
-      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.5 },
-      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.8 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.8
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.8
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.4
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.1
+      }
     ]
   },
   {
     "masv": "sv020",
-    "hoten": "Đặng Ngọc Uyên",
-    "tuoi": 21,
+    "hoten": "Thái Mai Hà",
+    "tuoi": 20,
     "phai": "Nữ",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Nga", "Tiếng Anh"],
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.6 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 }
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 5.8
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.6
+      }
     ]
   },
   {
     "masv": "sv021",
-    "hoten": "Cao Thái Bảo",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "hoten": "Đoàn Hải Khánh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
-      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.2 }
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.4
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 9.7
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 9.8
+      }
     ]
   },
   {
     "masv": "sv022",
-    "hoten": "Chu Diệu Châu",
-    "tuoi": 22,
+    "hoten": "Trịnh Thị Giang",
+    "tuoi": 18,
     "phai": "Nữ",
     "malop": "l03",
-    "ngoaingu": ["Tiếng Trung"],
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
-      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 8.0 }
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 5.6
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.9
+      }
     ]
   },
   {
     "masv": "sv023",
-    "hoten": "Đoàn Gia Huy",
-    "tuoi": 21,
-    "phai": "Nam",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Hàn"],
+    "hoten": "Hà Ngọc Nga",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.2 },
-      { "mamon": "iot", "tenmon": "Internet vạn vật", "diem": 8.8 }
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.3
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 4.2
+      }
     ]
   },
   {
     "masv": "sv024",
-    "hoten": "Hà Ánh Hân",
-    "tuoi": 20,
+    "hoten": "Huỳnh Tuyết Bích",
+    "tuoi": 19,
     "phai": "Nữ",
-    "malop": "l03",
-    "ngoaingu": ["Tiếng Pháp", "Tiếng Anh"],
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.2 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.5 }
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.6
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.0
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.9
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 9.9
+      }
     ]
   },
   {
     "masv": "sv025",
-    "hoten": "Hồ Nhật Nam",
-    "tuoi": 23,
-    "phai": "Nam",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Anh"],
+    "hoten": "Vũ Thị Yến",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.8 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 6.2 }
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.6
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.8
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.3
+      }
     ]
   },
   {
     "masv": "sv026",
-    "hoten": "Khổng Thục Quyên",
-    "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "hoten": "Mai Thế Cường",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.6 },
-      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.4 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.8 }
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.9
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.3
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.6
+      }
     ]
   },
   {
     "masv": "sv027",
-    "hoten": "La Tuấn Khang",
+    "hoten": "Đoàn Việt Long",
     "tuoi": 20,
     "phai": "Nam",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Trung", "Tiếng Anh"],
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.0 },
-      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 7.5 }
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.3
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 5.3
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 5.8
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.7
+      }
     ]
   },
   {
     "masv": "sv028",
-    "hoten": "Lương Mỹ Duyên",
+    "hoten": "Hồ Thành Bách",
     "tuoi": 22,
-    "phai": "Nữ",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Hàn"],
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.4 },
-      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.0 }
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.1
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 9.4
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.5
+      }
     ]
   },
   {
     "masv": "sv029",
-    "hoten": "Mã Quốc Bảo",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Đức"],
+    "hoten": "Chu Thu Yến",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
-      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.2 }
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.4
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.7
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.2
+      }
     ]
   },
   {
     "masv": "sv030",
-    "hoten": "Nghiêm Thu Thủy",
+    "hoten": "Lý Trọng Đạt",
     "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Anh"],
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.8 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 7.0 }
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.2
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 9.8
+      }
     ]
   },
   {
     "masv": "sv031",
-    "hoten": "Phí Trọng Nhân",
+    "hoten": "Vũ Thu Tâm",
     "tuoi": 22,
-    "phai": "Nam",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
-      { "mamon": "bigdata", "tenmon": "Dữ liệu lớn", "diem": 8.8 }
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 5.7
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.6
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 4.4
+      }
     ]
   },
   {
     "masv": "sv032",
-    "hoten": "Quách Tố Uyên",
-    "tuoi": 20,
+    "hoten": "Trương Mỹ Như",
+    "tuoi": 22,
     "phai": "Nữ",
-    "malop": "l04",
-    "ngoaingu": ["Tiếng Tây Ban Nha", "Tiếng Anh"],
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
-      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.7 }
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.1
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      }
     ]
   },
   {
     "masv": "sv033",
-    "hoten": "Sầm Kiến Quốc",
-    "tuoi": 23,
+    "hoten": "Đinh Đình Phúc",
+    "tuoi": 21,
     "phai": "Nam",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Anh"],
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 4.5 },
-      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.0 }
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.2
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.9
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.9
+      }
     ]
   },
   {
     "masv": "sv034",
-    "hoten": "Thân Hoàng Yến",
-    "tuoi": 21,
-    "phai": "Nữ",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Pháp", "Tiếng Anh"],
+    "hoten": "Dương Ngọc Dũng",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.1 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.4 },
-      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.0 }
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.7
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.8
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.7
+      }
     ]
   },
   {
     "masv": "sv035",
-    "hoten": "Tiêu Vĩnh Phát",
-    "tuoi": 20,
+    "hoten": "Trương Đình Tuấn",
+    "tuoi": 19,
     "phai": "Nam",
     "malop": "l05",
-    "ngoaingu": ["Tiếng Trung"],
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.2 },
-      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 7.8 }
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.1
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.5
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.2
+      }
     ]
   },
   {
     "masv": "sv036",
-    "hoten": "Trang Ngọc Hân",
+    "hoten": "Nguyễn Diệu Trâm",
     "tuoi": 22,
     "phai": "Nữ",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Hàn", "Tiếng Anh"],
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
-      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.3 }
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.4
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.8
+      }
     ]
   },
   {
     "masv": "sv037",
-    "hoten": "Triệu Thanh Hải",
+    "hoten": "Ngô Bảo Dung",
     "tuoi": 21,
-    "phai": "Nam",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Đức", "Tiếng Anh"],
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.7 },
-      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 9.0 }
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.2
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.1
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.8
+      }
     ]
   },
   {
     "masv": "sv038",
-    "hoten": "Ung Hoài Nam",
-    "tuoi": 20,
-    "phai": "Nam",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Nga", "Tiếng Anh"],
+    "hoten": "Trương Thanh Huyền",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
-      { "mamon": "iot", "tenmon": "Internet vạn vật", "diem": 8.0 }
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.1
+      }
     ]
   },
   {
     "masv": "sv039",
-    "hoten": "Vi Thúy Nga",
-    "tuoi": 22,
+    "hoten": "Phạm Thu Loan",
+    "tuoi": 18,
     "phai": "Nữ",
-    "malop": "l05",
-    "ngoaingu": ["Tiếng Nhật"],
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.4 },
-      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.6 },
-      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.2 }
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.3
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.8
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.1
+      }
     ]
   },
   {
     "masv": "sv040",
-    "hoten": "Vũ Đăng Khoa",
-    "tuoi": 21,
+    "hoten": "Chu Yến Châu",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.4
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 5.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv041",
+    "hoten": "Hoàng Ngọc Lâm",
+    "tuoi": 23,
     "phai": "Nam",
     "malop": "l05",
-    "ngoaingu": ["Tiếng Anh", "Tiếng Ý"],
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
     "monhoc": [
-      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.9 },
-      { "mamon": "bigdata", "tenmon": "Dữ liệu lớn", "diem": 9.1 }
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.8
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.2
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.6
+      }
+    ]
+  },
+  {
+    "masv": "sv042",
+    "hoten": "Bùi Thị Quỳnh",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.3
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.0
+      }
+    ]
+  },
+  {
+    "masv": "sv043",
+    "hoten": "Phan Đức Nghĩa",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.7
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 5.7
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv044",
+    "hoten": "Lý Ánh Thu",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.3
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.7
+      }
+    ]
+  },
+  {
+    "masv": "sv045",
+    "hoten": "Cao Thành Long",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.2
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.6
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.9
+      }
+    ]
+  },
+  {
+    "masv": "sv046",
+    "hoten": "Phùng Thanh Vân",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.3
+      }
+    ]
+  },
+  {
+    "masv": "sv047",
+    "hoten": "Phạm Thùy Nhi",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.9
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.8
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.0
+      }
+    ]
+  },
+  {
+    "masv": "sv048",
+    "hoten": "Trương Trọng Nam",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.6
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 9.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.8
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.1
+      }
+    ]
+  },
+  {
+    "masv": "sv049",
+    "hoten": "Huỳnh Việt Đạt",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.7
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 9.5
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.2
+      }
+    ]
+  },
+  {
+    "masv": "sv050",
+    "hoten": "Lâm Phương Như",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 4.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 9.6
+      }
+    ]
+  },
+  {
+    "masv": "sv051",
+    "hoten": "Thái Khánh Oanh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.0
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 5.8
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv052",
+    "hoten": "Nguyễn Thùy Hương",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.5
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.5
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv053",
+    "hoten": "Lê Hải Nga",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.9
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.8
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.8
+      }
+    ]
+  },
+  {
+    "masv": "sv054",
+    "hoten": "Bùi Thế Sơn",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 5.8
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.7
+      }
+    ]
+  },
+  {
+    "masv": "sv055",
+    "hoten": "Trịnh Minh Quân",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.2
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 5.2
+      }
+    ]
+  },
+  {
+    "masv": "sv056",
+    "hoten": "Thái Mai Phương",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.9
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.0
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.2
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv057",
+    "hoten": "Lê Thế Thuận",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 9.1
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.7
+      }
+    ]
+  },
+  {
+    "masv": "sv058",
+    "hoten": "Đỗ Gia Hiếu",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.4
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.9
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.0
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.9
+      }
+    ]
+  },
+  {
+    "masv": "sv059",
+    "hoten": "Đinh Thanh Quỳnh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.2
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv060",
+    "hoten": "Trương Quang Giang",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.6
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 9.3
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.4
+      }
+    ]
+  },
+  {
+    "masv": "sv061",
+    "hoten": "Ngô Mai Vân",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.1
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.4
+      }
+    ]
+  },
+  {
+    "masv": "sv062",
+    "hoten": "Vũ Khắc Thuận",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 6.6
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 5.8
+      }
+    ]
+  },
+  {
+    "masv": "sv063",
+    "hoten": "Dương Bảo Yến",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.7
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 6.4
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv064",
+    "hoten": "Hà Hải Duyên",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 5.6
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.6
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.3
+      }
+    ]
+  },
+  {
+    "masv": "sv065",
+    "hoten": "Trần Lan Quỳnh",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.7
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.6
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.6
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.1
+      }
+    ]
+  },
+  {
+    "masv": "sv066",
+    "hoten": "Trần Yến Ngân",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.3
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.4
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv067",
+    "hoten": "Chu Khánh My",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.4
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 5.8
+      }
+    ]
+  },
+  {
+    "masv": "sv068",
+    "hoten": "Lê Diệu Anh",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.2
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 4.3
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.8
+      }
+    ]
+  },
+  {
+    "masv": "sv069",
+    "hoten": "Vũ Thùy Vân",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.3
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.8
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv070",
+    "hoten": "Lâm Việt Thuận",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 4.8
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 5.7
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv071",
+    "hoten": "Lâm Tuấn Vũ",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.8
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.1
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.4
+      }
+    ]
+  },
+  {
+    "masv": "sv072",
+    "hoten": "Bùi Đình Hùng",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.3
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.6
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.7
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.3
+      }
+    ]
+  },
+  {
+    "masv": "sv073",
+    "hoten": "Lâm Văn Hùng",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.9
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.7
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.4
+      }
+    ]
+  },
+  {
+    "masv": "sv074",
+    "hoten": "Dương Mỹ Hương",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.4
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.1
+      }
+    ]
+  },
+  {
+    "masv": "sv075",
+    "hoten": "Thái Hải Đạt",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.9
+      }
+    ]
+  },
+  {
+    "masv": "sv076",
+    "hoten": "Đặng Bích Thảo",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 5.3
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv077",
+    "hoten": "Ngô Quốc Sơn",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.2
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv078",
+    "hoten": "Trịnh Ngọc Trâm",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 6.3
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 5.7
+      }
+    ]
+  },
+  {
+    "masv": "sv079",
+    "hoten": "Trương Khánh Nga",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.3
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.5
+      }
+    ]
+  },
+  {
+    "masv": "sv080",
+    "hoten": "Trương Lan Ánh",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.7
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.6
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.8
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 5.7
+      }
+    ]
+  },
+  {
+    "masv": "sv081",
+    "hoten": "Nguyễn Thùy Thu",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.2
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 5.1
+      }
+    ]
+  },
+  {
+    "masv": "sv082",
+    "hoten": "Trương Hữu Giang",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.4
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.7
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.5
+      }
+    ]
+  },
+  {
+    "masv": "sv083",
+    "hoten": "Vũ Quang Khôi",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 5.7
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.0
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.9
+      }
+    ]
+  },
+  {
+    "masv": "sv084",
+    "hoten": "Trịnh Đình Việt",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 6.9
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.4
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 5.8
+      }
+    ]
+  },
+  {
+    "masv": "sv085",
+    "hoten": "Bùi Thành Bách",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.6
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.8
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.9
+      }
+    ]
+  },
+  {
+    "masv": "sv086",
+    "hoten": "Huỳnh Đức Việt",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.7
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv087",
+    "hoten": "Lê Thu Vân",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.1
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.9
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.9
+      }
+    ]
+  },
+  {
+    "masv": "sv088",
+    "hoten": "Lý Hải Quang",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.6
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.1
+      }
+    ]
+  },
+  {
+    "masv": "sv089",
+    "hoten": "Mai Việt Cường",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.7
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.7
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.5
+      }
+    ]
+  },
+  {
+    "masv": "sv090",
+    "hoten": "Vũ Hải Trí",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.1
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 5.6
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.5
+      }
+    ]
+  },
+  {
+    "masv": "sv091",
+    "hoten": "Võ Trọng Khoa",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.7
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.3
+      }
+    ]
+  },
+  {
+    "masv": "sv092",
+    "hoten": "Chu Gia Hùng",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 5.9
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 9.9
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.2
+      }
+    ]
+  },
+  {
+    "masv": "sv093",
+    "hoten": "Chu Quốc Việt",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 9.7
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.1
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.3
+      }
+    ]
+  },
+  {
+    "masv": "sv094",
+    "hoten": "Trần Tuyết Ngân",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.7
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 10.0
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.1
+      }
+    ]
+  },
+  {
+    "masv": "sv095",
+    "hoten": "Cao Bảo Thành",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 9.1
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.3
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv096",
+    "hoten": "Đào Khắc Khoa",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.4
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.5
+      }
+    ]
+  },
+  {
+    "masv": "sv097",
+    "hoten": "Lê Tuấn Nam",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.2
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 9.8
+      }
+    ]
+  },
+  {
+    "masv": "sv098",
+    "hoten": "Cao Hải Oanh",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 5.5
+      }
+    ]
+  },
+  {
+    "masv": "sv099",
+    "hoten": "Đặng Đình Quang",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.8
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 5.6
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.6
+      }
+    ]
+  },
+  {
+    "masv": "sv100",
+    "hoten": "Đặng Tuyết Anh",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.6
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.0
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 3.7
+      }
+    ]
+  },
+  {
+    "masv": "sv101",
+    "hoten": "Lý Hữu Thành",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.8
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.1
+      }
+    ]
+  },
+  {
+    "masv": "sv102",
+    "hoten": "Hoàng Ngọc Nga",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.1
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.7
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.0
+      }
+    ]
+  },
+  {
+    "masv": "sv103",
+    "hoten": "Trần Hoàng Cường",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.4
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.7
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.7
+      }
+    ]
+  },
+  {
+    "masv": "sv104",
+    "hoten": "Đào Quang Trí",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.5
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.7
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 5.6
+      }
+    ]
+  },
+  {
+    "masv": "sv105",
+    "hoten": "Trịnh Khánh Mai",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.5
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.1
+      }
+    ]
+  },
+  {
+    "masv": "sv106",
+    "hoten": "Đinh Hữu Đạt",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 4.8
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 5.8
+      }
+    ]
+  },
+  {
+    "masv": "sv107",
+    "hoten": "Đỗ Diệu Trang",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.5
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 5.4
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.2
+      }
+    ]
+  },
+  {
+    "masv": "sv108",
+    "hoten": "Lý Mỹ Ngọc",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.2
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv109",
+    "hoten": "Đào Hải Giang",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.7
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.9
+      }
+    ]
+  },
+  {
+    "masv": "sv110",
+    "hoten": "Phan Minh Nghĩa",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 6.9
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 9.4
+      }
+    ]
+  },
+  {
+    "masv": "sv111",
+    "hoten": "Lý Mỹ Nhung",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.8
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.0
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.2
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.0
+      }
+    ]
+  },
+  {
+    "masv": "sv112",
+    "hoten": "Lương Mai Thu",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.8
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.7
+      }
+    ]
+  },
+  {
+    "masv": "sv113",
+    "hoten": "Trịnh Thế Hùng",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.7
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 9.1
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.3
+      }
+    ]
+  },
+  {
+    "masv": "sv114",
+    "hoten": "Trần Mạnh Phong",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.3
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.7
+      }
+    ]
+  },
+  {
+    "masv": "sv115",
+    "hoten": "Dương Đức Dũng",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.9
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 9.9
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.7
+      }
+    ]
+  },
+  {
+    "masv": "sv116",
+    "hoten": "Phạm Gia Nghĩa",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 8.3
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 5.8
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.8
+      }
+    ]
+  },
+  {
+    "masv": "sv117",
+    "hoten": "Bùi Mạnh Sơn",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 9.8
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.4
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.1
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.5
+      }
+    ]
+  },
+  {
+    "masv": "sv118",
+    "hoten": "Đinh Hải Linh",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.9
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.1
+      }
+    ]
+  },
+  {
+    "masv": "sv119",
+    "hoten": "Trịnh Hoàng Thắng",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.6
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 9.6
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.7
+      }
+    ]
+  },
+  {
+    "masv": "sv120",
+    "hoten": "Đỗ Minh Long",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.7
+      }
+    ]
+  },
+  {
+    "masv": "sv121",
+    "hoten": "Hoàng Như Uyên",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.3
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.3
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.3
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv122",
+    "hoten": "Chu Thị Tuyết",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.6
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.1
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 9.3
+      }
+    ]
+  },
+  {
+    "masv": "sv123",
+    "hoten": "Lâm Đình Cường",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.4
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.2
+      }
+    ]
+  },
+  {
+    "masv": "sv124",
+    "hoten": "Hà Ngọc Hà",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.3
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.9
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      }
+    ]
+  },
+  {
+    "masv": "sv125",
+    "hoten": "Phùng Bảo Uyên",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 9.2
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.5
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 5.5
+      }
+    ]
+  },
+  {
+    "masv": "sv126",
+    "hoten": "Thái Bảo Linh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.2
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.4
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.5
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv127",
+    "hoten": "Thái Việt Phúc",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.6
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 5.6
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 5.2
+      }
+    ]
+  },
+  {
+    "masv": "sv128",
+    "hoten": "Nguyễn Ánh Hằng",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.6
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.1
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.0
+      }
+    ]
+  },
+  {
+    "masv": "sv129",
+    "hoten": "Thái Ngọc Hạnh",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 10.0
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.9
+      }
+    ]
+  },
+  {
+    "masv": "sv130",
+    "hoten": "Đinh Việt Vinh",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.0
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.8
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv131",
+    "hoten": "Cao Phương Hạnh",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.6
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.4
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv132",
+    "hoten": "Vũ Hải Phúc",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.6
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 8.0
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.8
+      }
+    ]
+  },
+  {
+    "masv": "sv133",
+    "hoten": "Cao Khánh Tâm",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.4
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.5
+      }
+    ]
+  },
+  {
+    "masv": "sv134",
+    "hoten": "Trịnh Hoàng Nghĩa",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.3
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.8
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv135",
+    "hoten": "Lâm Hoàng Nguyên",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 7.0
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.7
+      }
+    ]
+  },
+  {
+    "masv": "sv136",
+    "hoten": "Hồ Bảo Anh",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.6
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.3
+      }
+    ]
+  },
+  {
+    "masv": "sv137",
+    "hoten": "Lý Ngọc Linh",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.8
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv138",
+    "hoten": "Lâm Việt Hùng",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 9.9
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 9.9
+      }
+    ]
+  },
+  {
+    "masv": "sv139",
+    "hoten": "Dương Ánh Như",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.3
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv140",
+    "hoten": "Lâm Ngọc Bách",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 5.1
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.2
+      }
+    ]
+  },
+  {
+    "masv": "sv141",
+    "hoten": "Vũ Việt Minh",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.6
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.9
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.1
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv142",
+    "hoten": "Trần Việt Nguyên",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 9.2
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.4
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv143",
+    "hoten": "Lý Kim Hương",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.9
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.3
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv144",
+    "hoten": "Thái Bích Ngân",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 9.5
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 4.4
+      }
+    ]
+  },
+  {
+    "masv": "sv145",
+    "hoten": "Nguyễn Phương Hoa",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.6
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 8.0
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 9.9
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 5.9
+      }
+    ]
+  },
+  {
+    "masv": "sv146",
+    "hoten": "Đoàn Xuân Trung",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.1
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.1
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.5
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.3
+      }
+    ]
+  },
+  {
+    "masv": "sv147",
+    "hoten": "Vũ Quang Khánh",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.8
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 9.0
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 6.7
+      }
+    ]
+  },
+  {
+    "masv": "sv148",
+    "hoten": "Huỳnh Thanh Thủy",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.2
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.4
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.1
+      }
+    ]
+  },
+  {
+    "masv": "sv149",
+    "hoten": "Đỗ Hữu Bách",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.2
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.5
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv150",
+    "hoten": "Thái Thành Hải",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 7.9
+      }
+    ]
+  },
+  {
+    "masv": "sv151",
+    "hoten": "Vũ Đình Quang",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 6.9
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 5.7
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.2
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.4
+      }
+    ]
+  },
+  {
+    "masv": "sv152",
+    "hoten": "Phạm Mỹ Châu",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 6.1
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.1
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.7
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv153",
+    "hoten": "Lương Quang Đạt",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.3
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 5.7
+      }
+    ]
+  },
+  {
+    "masv": "sv154",
+    "hoten": "Tạ Thùy Thảo",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.1
+      }
+    ]
+  },
+  {
+    "masv": "sv155",
+    "hoten": "Bùi Thị Vân",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 5.7
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.2
+      }
+    ]
+  },
+  {
+    "masv": "sv156",
+    "hoten": "Vũ Đức Giang",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.4
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.3
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.4
+      }
+    ]
+  },
+  {
+    "masv": "sv157",
+    "hoten": "Hoàng Đức Lâm",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.6
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.2
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 7.4
+      }
+    ]
+  },
+  {
+    "masv": "sv158",
+    "hoten": "Tạ Ánh Huyền",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 6.8
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.8
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv159",
+    "hoten": "Đỗ Bảo Huyền",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.9
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.8
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.4
+      }
+    ]
+  },
+  {
+    "masv": "sv160",
+    "hoten": "Hà Lan Hà",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 6.4
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.0
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv161",
+    "hoten": "Hồ Hồng Giang",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.6
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.8
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 4.2
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv162",
+    "hoten": "Lâm Hải Hà",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 7.2
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.8
+      },
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 8.9
+      }
+    ]
+  },
+  {
+    "masv": "sv163",
+    "hoten": "Thái Ngọc Vũ",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.6
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 6.1
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.9
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv164",
+    "hoten": "Ngô Mai Anh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.6
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.5
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.7
+      }
+    ]
+  },
+  {
+    "masv": "sv165",
+    "hoten": "Lê Quốc Khoa",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.4
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 9.0
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv166",
+    "hoten": "Phùng Quốc Bình",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l02",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.4
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 8.3
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.6
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 7.9
+      }
+    ]
+  },
+  {
+    "masv": "sv167",
+    "hoten": "Trương Hoàng Trí",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 7.2
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 9.6
+      }
+    ]
+  },
+  {
+    "masv": "sv168",
+    "hoten": "Trịnh Thu Ngân",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.4
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.9
+      }
+    ]
+  },
+  {
+    "masv": "sv169",
+    "hoten": "Đỗ Hải Bách",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.7
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.9
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.1
+      }
+    ]
+  },
+  {
+    "masv": "sv170",
+    "hoten": "Ngô Thu Quỳnh",
+    "tuoi": 23,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Trung"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.8
+      }
+    ]
+  },
+  {
+    "masv": "sv171",
+    "hoten": "Lý Thanh Hoa",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 6.0
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 8.2
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.8
+      }
+    ]
+  },
+  {
+    "masv": "sv172",
+    "hoten": "Vũ Việt Quân",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.2
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 7.8
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 5.1
+      }
+    ]
+  },
+  {
+    "masv": "sv173",
+    "hoten": "Trịnh Phương Như",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.3
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 9.2
+      },
+      {
+        "mamon": "mobile",
+        "tenmon": "Lập trình Di động",
+        "diem": 8.7
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv174",
+    "hoten": "Trương Tuyết Hằng",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "mangmaytinh",
+        "tenmon": "Mạng máy tính",
+        "diem": 9.1
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 6.5
+      }
+    ]
+  },
+  {
+    "masv": "sv175",
+    "hoten": "Phùng Bảo Quân",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 9.9
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 5.2
+      }
+    ]
+  },
+  {
+    "masv": "sv176",
+    "hoten": "Vũ Thanh Mai",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.1
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.3
+      }
+    ]
+  },
+  {
+    "masv": "sv177",
+    "hoten": "Đoàn Thế Thắng",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.3
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 6.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 4.8
+      }
+    ]
+  },
+  {
+    "masv": "sv178",
+    "hoten": "Bùi Bảo Tài",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.1
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 9.0
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.2
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.6
+      }
+    ]
+  },
+  {
+    "masv": "sv179",
+    "hoten": "Phan Thanh Vy",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 5.8
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 5.2
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.4
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.3
+      }
+    ]
+  },
+  {
+    "masv": "sv180",
+    "hoten": "Phùng Mai Anh",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 9.1
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 9.8
+      }
+    ]
+  },
+  {
+    "masv": "sv181",
+    "hoten": "Ngô Thanh Phượng",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.4
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv182",
+    "hoten": "Hoàng Thanh Diệp",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l01",
+    "ngoaingu": [
+      "Tiếng Pháp"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.8
+      },
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.6
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 4.5
+      }
+    ]
+  },
+  {
+    "masv": "sv183",
+    "hoten": "Đào Quốc Hùng",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 7.0
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 8.1
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 5.7
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.3
+      }
+    ]
+  },
+  {
+    "masv": "sv184",
+    "hoten": "Đặng Phương Thu",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.7
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.0
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.4
+      }
+    ]
+  },
+  {
+    "masv": "sv185",
+    "hoten": "Thái Như Hà",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 6.9
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 7.2
+      },
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv186",
+    "hoten": "Trần Quang Việt",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 6.2
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 6.7
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 9.7
+      }
+    ]
+  },
+  {
+    "masv": "sv187",
+    "hoten": "Mai Đức Quang",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Nga",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 5.8
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 8.1
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.6
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 6.6
+      }
+    ]
+  },
+  {
+    "masv": "sv188",
+    "hoten": "Nguyễn Thành Tuấn",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.7
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 9.3
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.2
+      }
+    ]
+  },
+  {
+    "masv": "sv189",
+    "hoten": "Mai Thùy Quỳnh",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ai",
+        "tenmon": "Trí tuệ nhân tạo",
+        "diem": 7.6
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 8.2
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.1
+      }
+    ]
+  },
+  {
+    "masv": "sv190",
+    "hoten": "Vũ Ngọc Phượng",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.2
+      },
+      {
+        "mamon": "security",
+        "tenmon": "An toàn thông tin",
+        "diem": 6.8
+      }
+    ]
+  },
+  {
+    "masv": "sv191",
+    "hoten": "Thái Gia Phúc",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l06",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 5.7
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 9.6
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.0
+      }
+    ]
+  },
+  {
+    "masv": "sv192",
+    "hoten": "Hà Bảo Sơn",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l08",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 6.5
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 9.1
+      },
+      {
+        "mamon": "devops",
+        "tenmon": "Kỹ thuật DevOps",
+        "diem": 4.8
+      }
+    ]
+  },
+  {
+    "masv": "sv193",
+    "hoten": "Cao Kim Hân",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.8
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 9.1
+      }
+    ]
+  },
+  {
+    "masv": "sv194",
+    "hoten": "Hà Khánh Duyên",
+    "tuoi": 19,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": [
+      "Tiếng Nhật"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 4.8
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.3
+      },
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.4
+      }
+    ]
+  },
+  {
+    "masv": "sv195",
+    "hoten": "Dương Thùy Trâm",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 3.8
+      },
+      {
+        "mamon": "bigdata",
+        "tenmon": "Dữ liệu lớn",
+        "diem": 8.3
+      },
+      {
+        "mamon": "ktpm",
+        "tenmon": "Kiểm thử phần mềm",
+        "diem": 6.7
+      },
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 9.7
+      }
+    ]
+  },
+  {
+    "masv": "sv196",
+    "hoten": "Võ Đình Đạt",
+    "tuoi": 19,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": [
+      "Tiếng Tây Ban Nha",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 7.9
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 8.5
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.8
+      }
+    ]
+  },
+  {
+    "masv": "sv197",
+    "hoten": "Phạm Đức Kiên",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 7.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 8.9
+      },
+      {
+        "mamon": "blockchain",
+        "tenmon": "Công nghệ Chuỗi khối",
+        "diem": 8.9
+      }
+    ]
+  },
+  {
+    "masv": "sv198",
+    "hoten": "Đặng Thế Lâm",
+    "tuoi": 18,
+    "phai": "Nam",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Ý",
+      "Tiếng Anh"
+    ],
+    "monhoc": [
+      {
+        "mamon": "cloud",
+        "tenmon": "Điện toán đám mây",
+        "diem": 8.7
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 8.1
+      },
+      {
+        "mamon": "hqtcsdl",
+        "tenmon": "Hệ quản trị CSDL",
+        "diem": 7.3
+      }
+    ]
+  },
+  {
+    "masv": "sv199",
+    "hoten": "Lâm Đức Nguyên",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": [
+      "Tiếng Anh",
+      "Tiếng Nhật",
+      "Tiếng Hàn"
+    ],
+    "monhoc": [
+      {
+        "mamon": "csdl",
+        "tenmon": "Cơ sở dữ liệu",
+        "diem": 6.5
+      },
+      {
+        "mamon": "laptrinh",
+        "tenmon": "Lập trình Cơ bản",
+        "diem": 9.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 9.4
+      },
+      {
+        "mamon": "iot",
+        "tenmon": "Internet vạn vật",
+        "diem": 8.2
+      }
+    ]
+  },
+  {
+    "masv": "sv200",
+    "hoten": "Lương Diệu Quỳnh",
+    "tuoi": 18,
+    "phai": "Nữ",
+    "malop": "l07",
+    "ngoaingu": [
+      "Tiếng Đức"
+    ],
+    "monhoc": [
+      {
+        "mamon": "uxui",
+        "tenmon": "Thiết kế Giao diện",
+        "diem": 7.3
+      },
+      {
+        "mamon": "web",
+        "tenmon": "Lập trình Web",
+        "diem": 6.6
+      },
+      {
+        "mamon": "ctdl",
+        "tenmon": "Cấu trúc dữ liệu",
+        "diem": 7.6
+      }
     ]
   }
 ]
