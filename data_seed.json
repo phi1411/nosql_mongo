@@ -54,7 +54,7 @@
     "hoten": "Hoàng Thị Dung",
     "tuoi": 21,
     "phai": "Nữ",
-    "malop": "l02",
+    "malop": "l01",
     "ngoaingu": ["Tiếng Trung", "Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.8 },
@@ -67,7 +67,7 @@
     "hoten": "Đỗ Văn Giang",
     "tuoi": 23,
     "phai": "Nam",
-    "malop": "l02",
+    "malop": "l01",
     "ngoaingu": ["Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.0 },
@@ -79,7 +79,7 @@
     "hoten": "Vũ Thu Hà",
     "tuoi": 20,
     "phai": "Nữ",
-    "malop": "l02",
+    "malop": "l01",
     "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
@@ -91,7 +91,7 @@
     "hoten": "Ngô Quốc Hải",
     "tuoi": 21,
     "phai": "Nam",
-    "malop": "l02",
+    "malop": "l01",
     "ngoaingu": ["Tiếng Anh", "Tiếng Đức"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.0 },
@@ -104,7 +104,7 @@
     "hoten": "Bùi Mai Hương",
     "tuoi": 22,
     "phai": "Nữ",
-    "malop": "l03",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Hàn"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.8 },
@@ -116,7 +116,7 @@
     "hoten": "Đinh Tuấn Kiệt",
     "tuoi": 20,
     "phai": "Nam",
-    "malop": "l03",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Anh", "Tiếng Trung"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 4.0 },
@@ -128,7 +128,7 @@
     "hoten": "Dương Thùy Linh",
     "tuoi": 21,
     "phai": "Nữ",
-    "malop": "l03",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
@@ -141,7 +141,7 @@
     "hoten": "Lý Văn Long",
     "tuoi": 22,
     "phai": "Nam",
-    "malop": "l03",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.8 },
@@ -153,7 +153,7 @@
     "hoten": "Mai Trọng Nghĩa",
     "tuoi": 20,
     "phai": "Nam",
-    "malop": "l04",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Nhật"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
@@ -165,7 +165,7 @@
     "hoten": "Phan Thị Oanh",
     "tuoi": 21,
     "phai": "Nữ",
-    "malop": "l04",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Anh", "Tiếng Pháp"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
@@ -178,7 +178,7 @@
     "hoten": "Trịnh Hoàng Phúc",
     "tuoi": 23,
     "phai": "Nam",
-    "malop": "l04",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.5 },
@@ -190,7 +190,7 @@
     "hoten": "Vương Kim Phượng",
     "tuoi": 20,
     "phai": "Nữ",
-    "malop": "l04",
+    "malop": "l02",
     "ngoaingu": ["Tiếng Trung", "Tiếng Hàn"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.8 },
@@ -202,7 +202,7 @@
     "hoten": "Tạ Quang Quân",
     "tuoi": 22,
     "phai": "Nam",
-    "malop": "l05",
+    "malop": "l03",
     "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
@@ -214,7 +214,7 @@
     "hoten": "Lâm Thanh Sơn",
     "tuoi": 21,
     "phai": "Nam",
-    "malop": "l05",
+    "malop": "l03",
     "ngoaingu": ["Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.5 },
@@ -226,7 +226,7 @@
     "hoten": "Nguyễn Hoàng Tiến",
     "tuoi": 20,
     "phai": "Nam",
-    "malop": "l05",
+    "malop": "l03",
     "ngoaingu": ["Tiếng Đức", "Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
@@ -239,11 +239,255 @@
     "hoten": "Đặng Ngọc Uyên",
     "tuoi": 21,
     "phai": "Nữ",
-    "malop": "l05",
+    "malop": "l03",
     "ngoaingu": ["Tiếng Nga", "Tiếng Anh"],
     "monhoc": [
       { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.6 },
       { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv021",
+    "hoten": "Cao Thái Bảo",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
+      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.2 }
+    ]
+  },
+  {
+    "masv": "sv022",
+    "hoten": "Chu Diệu Châu",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Trung"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
+      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 8.0 }
+    ]
+  },
+  {
+    "masv": "sv023",
+    "hoten": "Đoàn Gia Huy",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Hàn"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.2 },
+      { "mamon": "iot", "tenmon": "Internet vạn vật", "diem": 8.8 }
+    ]
+  },
+  {
+    "masv": "sv024",
+    "hoten": "Hà Ánh Hân",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l03",
+    "ngoaingu": ["Tiếng Pháp", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.2 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.5 }
+    ]
+  },
+  {
+    "masv": "sv025",
+    "hoten": "Hồ Nhật Nam",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 5.8 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 6.2 }
+    ]
+  },
+  {
+    "masv": "sv026",
+    "hoten": "Khổng Thục Quyên",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.6 },
+      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.4 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.8 }
+    ]
+  },
+  {
+    "masv": "sv027",
+    "hoten": "La Tuấn Khang",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Trung", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.0 },
+      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 7.5 }
+    ]
+  },
+  {
+    "masv": "sv028",
+    "hoten": "Lương Mỹ Duyên",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Hàn"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.4 },
+      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv029",
+    "hoten": "Mã Quốc Bảo",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Đức"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
+      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.2 }
+    ]
+  },
+  {
+    "masv": "sv030",
+    "hoten": "Nghiêm Thu Thủy",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.8 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 7.0 }
+    ]
+  },
+  {
+    "masv": "sv031",
+    "hoten": "Phí Trọng Nhân",
+    "tuoi": 22,
+    "phai": "Nam",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Nhật", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.0 },
+      { "mamon": "bigdata", "tenmon": "Dữ liệu lớn", "diem": 8.8 }
+    ]
+  },
+  {
+    "masv": "sv032",
+    "hoten": "Quách Tố Uyên",
+    "tuoi": 20,
+    "phai": "Nữ",
+    "malop": "l04",
+    "ngoaingu": ["Tiếng Tây Ban Nha", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.5 },
+      { "mamon": "mobile", "tenmon": "Lập trình Di động", "diem": 8.7 }
+    ]
+  },
+  {
+    "masv": "sv033",
+    "hoten": "Sầm Kiến Quốc",
+    "tuoi": 23,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 4.5 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 5.0 }
+    ]
+  },
+  {
+    "masv": "sv034",
+    "hoten": "Thân Hoàng Yến",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Pháp", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.1 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.4 },
+      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv035",
+    "hoten": "Tiêu Vĩnh Phát",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Trung"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.2 },
+      { "mamon": "mangmaytinh", "tenmon": "Mạng máy tính", "diem": 7.8 }
+    ]
+  },
+  {
+    "masv": "sv036",
+    "hoten": "Trang Ngọc Hân",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Hàn", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.0 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 8.3 }
+    ]
+  },
+  {
+    "masv": "sv037",
+    "hoten": "Triệu Thanh Hải",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Đức", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.7 },
+      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 9.0 }
+    ]
+  },
+  {
+    "masv": "sv038",
+    "hoten": "Ung Hoài Nam",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Nga", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 7.5 },
+      { "mamon": "iot", "tenmon": "Internet vạn vật", "diem": 8.0 }
+    ]
+  },
+  {
+    "masv": "sv039",
+    "hoten": "Vi Thúy Nga",
+    "tuoi": 22,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Nhật"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.4 },
+      { "mamon": "ai", "tenmon": "Trí tuệ nhân tạo", "diem": 9.6 },
+      { "mamon": "uxui", "tenmon": "Thiết kế Giao diện", "diem": 9.2 }
+    ]
+  },
+  {
+    "masv": "sv040",
+    "hoten": "Vũ Đăng Khoa",
+    "tuoi": 21,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Anh", "Tiếng Ý"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.9 },
+      { "mamon": "bigdata", "tenmon": "Dữ liệu lớn", "diem": 9.1 }
     ]
   }
 ]
