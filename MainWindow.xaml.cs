@@ -13,16 +13,22 @@ using StudentManagementApp.Views;
 
 namespace StudentManagementApp
 {
+    /// <summary>
+    /// Lớp xử lý giao diện chính MainWindow: Bắt sự kiện người dùng và điều phối dữ liệu
+    /// </summary>
     public partial class MainWindow : Window
     {
         private readonly MongoDbService _mongoService;
         private List<SinhVien> _allStudents = new();
         private SinhVien? _selectedStudent;
 
-        // Observable collections cho form động
+        // ObservableCollection giúp tự động cập nhật danh sách Ngoại ngữ & Môn học lên UI khi có thay đổi
         private readonly ObservableCollection<string> _currentNgoaiNgu = new();
         private readonly ObservableCollection<MonHoc> _currentMonHoc = new();
 
+        /// <summary>
+        /// Constructor khởi tạo MainWindow: Gán Singleton MongoDbService và liên kết DataBinding
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -31,17 +37,22 @@ namespace StudentManagementApp
             DgMonHoc.ItemsSource = _currentMonHoc;
         }
 
+        /// <summary>
+        /// Sự kiện chạy khi cửa sổ vừa tải xong (Window_Loaded):
+        /// 1. Tự động khởi tạo Unique Index và Compound Index dưới MongoDB Atlas
+        /// 2. Nạp toàn bộ dữ liệu sinh viên và Dashboard lên màn hình
+        /// </summary>
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             TxtStatusBar.Text = "Đang kết nối MongoDB Atlas và khởi tạo Indexes...";
             try
             {
-                // Khởi tạo Unique Index và Compound Index
+                // Khởi tạo Unique Index (masv) và Compound Index ({ malop: 1, hoten: 1 })
                 await _mongoService.InitializeIndexesAsync();
                 TxtStatusBadge.Text = "MongoDB Connected";
                 TxtStatusBar.Text = "Đã kết nối MongoDB Atlas & thiết lập Indexes thành công.";
 
-                // Tải dữ liệu
+                // Tải danh sách sinh viên và tính toán Dashboard
                 await LoadAllDataAsync();
             }
             catch (Exception ex)
@@ -59,6 +70,9 @@ namespace StudentManagementApp
 
         #region Tải dữ liệu & Cập nhật UI
 
+        /// <summary>
+        /// Hàm tải toàn bộ danh sách sinh viên từ MongoDB Atlas, nạp danh sách lớp vào bộ lọc và cập nhật Dashboard
+        /// </summary>
         private async Task LoadAllDataAsync()
         {
             try
@@ -86,9 +100,10 @@ namespace StudentManagementApp
                     CboFilterClass.SelectedIndex = 0;
                 }
 
+                // Áp dụng bộ lọc và sắp xếp lên DataGrid
                 ApplyFilter();
 
-                // Tải dữ liệu Dashboard
+                // Tải dữ liệu thống kê cho màn hình Dashboard
                 await LoadDashboardDataAsync();
                 TxtStatusBar.Text = $"Đã tải thành công {_allStudents.Count} sinh viên.";
             }
@@ -98,6 +113,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Hàm áp dụng bộ lọc (theo Lớp, tìm kiếm Mã SV) và sắp xếp dữ liệu (theo Mã SV, Tên A-Z, Điểm TB, Tuổi)
+        /// </summary>
         private void ApplyFilter()
         {
             if (_allStudents == null || DgSinhVien == null || TxtTotalGridCount == null)
@@ -121,7 +139,7 @@ namespace StudentManagementApp
                 filtered = filtered.Where(s => s.MaSv.ToLower().Contains(searchMaSv));
             }
 
-            // 3. Sắp xếp theo tùy chọn
+            // 3. Sắp xếp theo tùy chọn của người dùng (hỗ trợ sắp xếp Tiếng Việt chuẩn)
             var viCulture = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
             var viComparer = StringComparer.Create(viCulture, true);
 
@@ -143,6 +161,9 @@ namespace StudentManagementApp
             TxtTotalGridCount.Text = $"{list.Count} sinh viên";
         }
 
+        /// <summary>
+        /// Hàm phụ trợ tách lấy tên gọi cuối cùng của người Việt (Ví dụ: "Nguyễn Văn An" -> "An") để sắp xếp A-Z chuẩn
+        /// </summary>
         private static string GetTenGoi(string hoTen)
         {
             if (string.IsNullOrWhiteSpace(hoTen)) return string.Empty;
@@ -150,6 +171,9 @@ namespace StudentManagementApp
             return parts.Length > 0 ? parts[^1] : hoTen;
         }
 
+        /// <summary>
+        /// Hàm gọi Aggregation Pipeline từ MongoDB để tính toán và cập nhật các chỉ số lên màn hình Dashboard
+        /// </summary>
         private async Task LoadDashboardDataAsync()
         {
             try
@@ -169,10 +193,10 @@ namespace StudentManagementApp
                 // 3. Thống kê ngoại ngữ
                 DgLangStats.ItemsSource = summary.ThongKeNgoaiNgu;
 
-                // 4. Top 5 sinh viên
+                // 4. Top 5 sinh viên điểm cao nhất
                 DgTop5Students.ItemsSource = summary.Top5SinhVien;
 
-                // 5. Phân loại học lực
+                // 5. Phân loại học lực toàn trường
                 IcAcademicClass.ItemsSource = summary.PhanLoaiHocLuc;
             }
             catch (Exception ex)
@@ -185,21 +209,33 @@ namespace StudentManagementApp
 
         #region Bộ lọc & Tìm kiếm
 
+        /// <summary>
+        /// Sự kiện khi người dùng chọn lớp khác trong ComboBox -> Áp dụng lại bộ lọc
+        /// </summary>
         private void CboFilterClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ApplyFilter();
         }
 
+        /// <summary>
+        /// Sự kiện khi người dùng chọn kiểu sắp xếp khác trong ComboBox -> Sắp xếp lại danh sách
+        /// </summary>
         private void CboSortBy_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ApplyFilter();
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Tìm Mã SV" -> Tìm kiếm theo mã sinh viên
+        /// </summary>
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             ApplyFilter();
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Đặt lại bộ lọc" -> Xóa từ khóa tìm kiếm và đưa bộ lọc/sắp xếp về mặc định
+        /// </summary>
         private void BtnResetFilter_Click(object sender, RoutedEventArgs e)
         {
             TxtSearchMaSv.Text = string.Empty;
@@ -209,6 +245,9 @@ namespace StudentManagementApp
             TxtStatusBar.Text = "Đã đặt lại toàn bộ bộ lọc và sắp xếp về mặc định.";
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Xóa Lớp" -> Hiện xác nhận và gọi deleteMany xóa toàn bộ sinh viên trong lớp
+        /// </summary>
         private async void BtnDeleteClass_Click(object sender, RoutedEventArgs e)
         {
             string selectedClass = CboFilterClass.SelectedItem as string ?? "";
@@ -244,6 +283,9 @@ namespace StudentManagementApp
 
         #region Xử lý Chọn Sinh Viên & Form Binding
 
+        /// <summary>
+        /// Sự kiện khi người dùng click chọn 1 sinh viên trong DataGrid -> Đổ dữ liệu lên Form chi tiết bên phải
+        /// </summary>
         private void DgSinhVien_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgSinhVien.SelectedItem is SinhVien sv)
@@ -263,7 +305,7 @@ namespace StudentManagementApp
                     RadNam.IsChecked = true;
                 }
 
-                // Cập nhật ObservableCollection cho Ngoại ngữ
+                // Cập nhật danh sách Ngoại ngữ động lên ListBox
                 _currentNgoaiNgu.Clear();
                 if (sv.NgoaiNgu != null)
                 {
@@ -273,7 +315,7 @@ namespace StudentManagementApp
                     }
                 }
 
-                // Cập nhật ObservableCollection cho Môn học
+                // Cập nhật danh sách Môn học động lên DataGrid môn học
                 _currentMonHoc.Clear();
                 if (sv.MonHoc != null)
                 {
@@ -292,6 +334,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Hàm làm sạch Form nhập liệu để chuẩn bị cho việc thêm mới sinh viên
+        /// </summary>
         private void ClearForm()
         {
             _selectedStudent = null;
@@ -306,6 +351,9 @@ namespace StudentManagementApp
             TxtStatusBar.Text = "Đã làm mới form nhập liệu.";
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Xóa trắng Form (Nhập mới)"
+        /// </summary>
         private void BtnClearForm_Click(object sender, RoutedEventArgs e)
         {
             ClearForm();
@@ -315,6 +363,9 @@ namespace StudentManagementApp
 
         #region Thao tác Mảng Động & Positional Operator ($)
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "[+] Thêm Ngoại Ngữ": Mở Dialog nhập ngoại ngữ và gọi $addToSet đẩy vào CSDL
+        /// </summary>
         private async void BtnAddLanguage_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new AddLanguageDialog { Owner = this };
@@ -354,6 +405,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Xóa Ngoại Ngữ": Xóa ngoại ngữ đang chọn khỏi danh sách
+        /// </summary>
         private void BtnRemoveLanguage_Click(object sender, RoutedEventArgs e)
         {
             if (LstNgoaiNgu.SelectedItem is string lang)
@@ -366,6 +420,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "[+] Thêm Môn": Mở Dialog nhập Mã môn, Tên môn, Điểm số và gọi $push đẩy vào CSDL
+        /// </summary>
         private async void BtnAddSubject_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new AddSubjectDialog { Owner = this };
@@ -406,6 +463,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "✏️ Sửa Điểm ($)": Mở Dialog nhập điểm mới và gọi Positional Operator ($) cập nhật CSDL
+        /// </summary>
         private async void BtnUpdateGrade_Click(object sender, RoutedEventArgs e)
         {
             if (DgMonHoc.SelectedItem is not MonHoc selectedSubject)
@@ -447,6 +507,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "Xóa Môn": Xóa môn học đang chọn khỏi danh sách
+        /// </summary>
         private void BtnRemoveSubject_Click(object sender, RoutedEventArgs e)
         {
             if (DgMonHoc.SelectedItem is MonHoc subject)
@@ -463,6 +526,9 @@ namespace StudentManagementApp
 
         #region Thao tác CRUD (Create, Update, Replace, Delete)
 
+        /// <summary>
+        /// Hàm xác thực tính hợp lệ của dữ liệu đầu vào Form (Tuổi > 0, không để trống Mã SV, Tên, Lớp)
+        /// </summary>
         private bool ValidateInput(out string masv, out string hoten, out int tuoi, out string phai, out string malop)
         {
             masv = TxtFormMaSv.Text.Trim();
@@ -502,6 +568,9 @@ namespace StudentManagementApp
             return true;
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "➕ Thêm mới (insertOne)": Kiểm tra hợp lệ và gửi lệnh insertOne xuống MongoDB Atlas
+        /// </summary>
         private async void BtnInsertOne_Click(object sender, RoutedEventArgs e)
         {
             if (!ValidateInput(out string masv, out string hoten, out int tuoi, out string phai, out string malop))
@@ -528,7 +597,7 @@ namespace StudentManagementApp
             }
             catch (DuplicateStudentIdException ex)
             {
-                // Bắt lỗi Unique Index
+                // Bắt lỗi Unique Index nếu trùng mã sinh viên
                 MessageBox.Show(ex.Message, "Lỗi Trùng Mã Sinh Viên (Unique Index Violation)", MessageBoxButton.OK, MessageBoxImage.Error);
                 TxtFormMaSv.Focus();
             }
@@ -538,6 +607,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "💾 Cập nhật ($set)": Gọi updateOne với toán tử $set để cập nhật thông tin cơ bản
+        /// </summary>
         private async void BtnUpdateBasic_Click(object sender, RoutedEventArgs e)
         {
             if (!ValidateInput(out string masv, out string hoten, out int tuoi, out string phai, out string malop))
@@ -563,6 +635,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "🔄 Thay thế (replaceOne)": Ghi đè thay thế toàn bộ Document cũ theo _id
+        /// </summary>
         private async void BtnReplaceOne_Click(object sender, RoutedEventArgs e)
         {
             if (_selectedStudent == null || string.IsNullOrWhiteSpace(_selectedStudent.Id))
@@ -618,6 +693,9 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "🗑️ Xóa SV (deleteOne)": Hiện hộp thoại xác nhận và gọi deleteOne xóa 1 sinh viên
+        /// </summary>
         private async void BtnDeleteOne_Click(object sender, RoutedEventArgs e)
         {
             string masv = TxtFormMaSv.Text.Trim();
@@ -661,10 +739,13 @@ namespace StudentManagementApp
 
         #region Seed Data & Refresh
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "📥 Nạp Seed Data Mẫu": Đọc data_seed.json và nạp 40 sinh viên vào MongoDB Atlas
+        /// </summary>
         private async void BtnSeedData_Click(object sender, RoutedEventArgs e)
         {
             var confirm = MessageBox.Show(
-                "Bạn có muốn nạp dữ liệu mẫu từ tệp 'data_seed.json' (200 sinh viên) vào CSDL MongoDB không?\n\nLưu ý: Hành động này sẽ làm mới toàn bộ collection sinhvien!",
+                "Bạn có muốn nạp dữ liệu mẫu từ tệp 'data_seed.json' vào CSDL MongoDB không?\n\nLưu ý: Hành động này sẽ làm mới toàn bộ collection sinhvien!",
                 "Xác nhận nạp dữ liệu mẫu",
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question);
@@ -691,11 +772,17 @@ namespace StudentManagementApp
             }
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "🔄 Tải lại" trên thanh Header: Tải lại toàn bộ dữ liệu từ MongoDB Atlas
+        /// </summary>
         private async void BtnRefreshAll_Click(object sender, RoutedEventArgs e)
         {
             await LoadAllDataAsync();
         }
 
+        /// <summary>
+        /// Sự kiện khi bấm nút "🔄 Làm mới Dashboard": Chạy lại Aggregation Pipeline để cập nhật số liệu
+        /// </summary>
         private async void BtnRefreshDashboard_Click(object sender, RoutedEventArgs e)
         {
             TxtStatusBar.Text = "Đang tính toán lại số liệu Dashboard qua Aggregation Pipeline...";

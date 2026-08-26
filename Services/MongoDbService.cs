@@ -11,13 +11,20 @@ using StudentManagementApp.Models;
 
 namespace StudentManagementApp.Services
 {
+    /// <summary>
+    /// Ngoại lệ tùy biến ném ra khi vi phạm ràng buộc trùng lặp Mã Sinh Viên (Unique Index)
+    /// </summary>
     public class DuplicateStudentIdException : Exception
     {
         public DuplicateStudentIdException(string message) : base(message) { }
     }
 
+    /// <summary>
+    /// Service trung tâm quản lý kết nối và thực thi toàn bộ các câu lệnh MongoDB (Singleton Pattern)
+    /// </summary>
     public class MongoDbService
     {
+        // Biến tĩnh lưu instance duy nhất của class (Singleton)
         private static MongoDbService? _instance;
         private static readonly object _lock = new();
 
@@ -27,6 +34,9 @@ namespace StudentManagementApp.Services
         private readonly string _connectionString;
         private readonly string _databaseName;
 
+        /// <summary>
+        /// Thuộc tính truy cập Instance duy nhất của MongoDbService trong toàn ứng dụng (Singleton)
+        /// </summary>
         public static MongoDbService Instance
         {
             get
@@ -42,6 +52,9 @@ namespace StudentManagementApp.Services
             }
         }
 
+        /// <summary>
+        /// Constructor private: Đọc cấu hình từ appsettings.json và khởi tạo kết nối MongoClient duy nhất
+        /// </summary>
         private MongoDbService()
         {
             var config = new ConfigurationBuilder()
@@ -68,21 +81,21 @@ namespace StudentManagementApp.Services
         public IMongoDatabase Database => _database;
 
         /// <summary>
-        /// Khởi tạo các Index bắt buộc khi ứng dụng khởi động (Tiêu chí 6)
-        /// - Unique Index: masv
-        /// - Compound Index: { malop: 1, hoten: 1 }
+        /// Tự động khởi tạo các Index khi ứng dụng khởi chạy (Tiêu chí 6):
+        /// 1. Unique Index cho masv (chống trùng lặp mã SV)
+        /// 2. Compound Index cho cặp { malop: 1, hoten: 1 } (tối ưu truy vấn và sắp xếp)
         /// </summary>
         public async Task InitializeIndexesAsync()
         {
             try
             {
-                // 1. Unique Index cho masv
+                // 1. Tạo Unique Index cho trường masv
                 var uniqueMasvIndex = new CreateIndexModel<SinhVien>(
                     Builders<SinhVien>.IndexKeys.Ascending(s => s.MaSv),
                     new CreateIndexOptions { Unique = true, Name = "idx_unique_masv" }
                 );
 
-                // 2. Compound Index cho { malop: 1, hoten: 1 }
+                // 2. Tạo Compound Index cho cặp trường { malop: 1, hoten: 1 }
                 var compoundClassStudentIndex = new CreateIndexModel<SinhVien>(
                     Builders<SinhVien>.IndexKeys.Ascending(s => s.MaLop).Ascending(s => s.HoTen),
                     new CreateIndexOptions { Name = "idx_compound_malop_hoten" }
@@ -98,6 +111,10 @@ namespace StudentManagementApp.Services
 
         #region 1. CRUD Cơ bản (Tiêu chí 3)
 
+        /// <summary>
+        /// Lấy toàn bộ danh sách sinh viên từ CSDL, sắp xếp theo Mã lớp và Họ tên
+        /// MongoDB: db.sinhvien.find().sort({ malop: 1, hoten: 1 })
+        /// </summary>
         public async Task<List<SinhVien>> GetAllAsync()
         {
             return await _sinhVienCollection.Find(Builders<SinhVien>.Filter.Empty)
@@ -105,11 +122,19 @@ namespace StudentManagementApp.Services
                 .ToListAsync();
         }
 
+        /// <summary>
+        /// Tìm kiếm chính xác một sinh viên dựa theo Mã sinh viên (masv)
+        /// MongoDB: db.sinhvien.findOne({ masv: "..." })
+        /// </summary>
         public async Task<SinhVien?> GetByMaSvAsync(string masv)
         {
             return await _sinhVienCollection.Find(s => s.MaSv.ToLower() == masv.Trim().ToLower()).FirstOrDefaultAsync();
         }
 
+        /// <summary>
+        /// Lọc danh sách sinh viên theo Mã lớp (malop)
+        /// MongoDB: db.sinhvien.find({ malop: "..." })
+        /// </summary>
         public async Task<List<SinhVien>> GetByMaLopAsync(string malop)
         {
             if (string.IsNullOrWhiteSpace(malop) || malop == "Tất cả")
@@ -121,12 +146,21 @@ namespace StudentManagementApp.Services
                 .ToListAsync();
         }
 
+        /// <summary>
+        /// Lấy danh sách tất cả các Mã lớp duy nhất không trùng lặp
+        /// MongoDB: db.sinhvien.distinct("malop")
+        /// </summary>
         public async Task<List<string>> GetAllClassesAsync()
         {
             var classes = await _sinhVienCollection.Distinct(s => s.MaLop, Builders<SinhVien>.Filter.Empty).ToListAsync();
             return classes.Where(c => !string.IsNullOrWhiteSpace(c)).OrderBy(c => c).ToList();
         }
 
+        /// <summary>
+        /// Thêm mới 1 Document sinh viên vào collection
+        /// MongoDB: db.sinhvien.insertOne(sv)
+        /// Bắt mã lỗi 11000 nếu vi phạm Unique Index (trùng masv)
+        /// </summary>
         public async Task InsertOneAsync(SinhVien sv)
         {
             try
@@ -147,6 +181,10 @@ namespace StudentManagementApp.Services
             }
         }
 
+        /// <summary>
+        /// Cập nhật các thông tin cơ bản của sinh viên (Họ tên, Tuổi, Giới tính, Mã lớp) theo masv
+        /// MongoDB: db.sinhvien.updateOne({ masv: "..." }, { $set: { hoten: "...", tuoi: ..., ... } })
+        /// </summary>
         public async Task<bool> UpdateBasicInfoAsync(string masv, string hoTen, int tuoi, string phai, string maLop)
         {
             var filter = Builders<SinhVien>.Filter.Eq(s => s.MaSv, masv);
@@ -160,6 +198,10 @@ namespace StudentManagementApp.Services
             return result.ModifiedCount > 0;
         }
 
+        /// <summary>
+        /// Xóa 1 sinh viên dựa theo Mã sinh viên (masv)
+        /// MongoDB: db.sinhvien.deleteOne({ masv: "..." })
+        /// </summary>
         public async Task<bool> DeleteOneAsync(string masv)
         {
             var filter = Builders<SinhVien>.Filter.Eq(s => s.MaSv, masv);
@@ -167,6 +209,10 @@ namespace StudentManagementApp.Services
             return result.DeletedCount > 0;
         }
 
+        /// <summary>
+        /// Xóa hàng loạt toàn bộ sinh viên thuộc một lớp cụ thể
+        /// MongoDB: db.sinhvien.deleteMany({ malop: "..." })
+        /// </summary>
         public async Task<long> DeleteManyByMaLopAsync(string malop)
         {
             var filter = Builders<SinhVien>.Filter.Eq(s => s.MaLop, malop);
@@ -179,7 +225,8 @@ namespace StudentManagementApp.Services
         #region 2. Xử lý Mảng Nâng cao & Thay thế Document (Tiêu chí 4)
 
         /// <summary>
-        /// Thêm ngoại ngữ mới cho sinh viên bằng toán tử $addToSet (tránh trùng) hoặc $push
+        /// Bổ sung ngoại ngữ mới vào mảng ngoaingu bằng toán tử $addToSet (tự động chống trùng lặp)
+        /// MongoDB: db.sinhvien.updateOne({ masv: "..." }, { $addToSet: { ngoaingu: "..." } })
         /// </summary>
         public async Task<bool> AddNgoaiNguAsync(string masv, string ngoaiNgu)
         {
@@ -190,7 +237,8 @@ namespace StudentManagementApp.Services
         }
 
         /// <summary>
-        /// Thêm môn học mới cho sinh viên bằng toán tử $push
+        /// Bổ sung môn học mới vào cuối mảng monhoc bằng toán tử $push
+        /// MongoDB: db.sinhvien.updateOne({ masv: "..." }, { $push: { monhoc: { mamon: "...", tenmon: "...", diem: ... } } })
         /// </summary>
         public async Task<bool> AddMonHocAsync(string masv, MonHoc monHoc)
         {
@@ -202,7 +250,7 @@ namespace StudentManagementApp.Services
 
         /// <summary>
         /// Cập nhật điểm số của một môn học cụ thể dựa vào masv và mamon bằng Positional Operator ($)
-        /// Câu lệnh MongoDB: db.sinhvien.updateOne({ masv: "...", "monhoc.mamon": "..." }, { $set: { "monhoc.$.diem": diemMoi } })
+        /// MongoDB: db.sinhvien.updateOne({ masv: "...", "monhoc.mamon": "..." }, { $set: { "monhoc.$.diem": diemMoi } })
         /// </summary>
         public async Task<bool> UpdateDiemMonHocAsync(string masv, string maMon, double diemMoi)
         {
@@ -217,7 +265,8 @@ namespace StudentManagementApp.Services
         }
 
         /// <summary>
-        /// Thay thế toàn bộ document sinh viên theo trường _id (replaceOne)
+        /// Thay thế toàn bộ nội dung Document sinh viên cũ bằng Document mới theo trường _id
+        /// MongoDB: db.sinhvien.replaceOne({ _id: ObjectId("...") }, sv)
         /// </summary>
         public async Task<bool> ReplaceOneAsync(string id, SinhVien sv)
         {
@@ -237,6 +286,14 @@ namespace StudentManagementApp.Services
 
         #region 3. Module Dashboard & Aggregation Pipeline (Tiêu chí 5)
 
+        /// <summary>
+        /// Thực thi các chuỗi Aggregation Pipeline để tính toán số liệu thống kê Dashboard:
+        /// 1. KPI Cards: Tổng SV, Tổng lớp, GPA toàn trường ($unwind + $avg), Tỷ lệ giới tính ($group)
+        /// 2. Thống kê theo lớp: Sĩ số ($sum), GPA Cao nhất ($max), GPA Thấp nhất ($min)
+        /// 3. Độ phổ biến ngoại ngữ: Tách mảng ($unwind) -> Nhóm đếm ($group) -> Sắp xếp ($sort)
+        /// 4. Top 5 sinh viên: Sắp xếp GPA giảm dần ($sort) -> Lấy 5 người ($limit: 5)
+        /// 5. Phân loại học lực: Xuất sắc, Giỏi, Khá, Trung bình/Yếu
+        /// </summary>
         public async Task<DashboardSummary> GetDashboardDataAsync()
         {
             var summary = new DashboardSummary();
@@ -434,6 +491,10 @@ namespace StudentManagementApp.Services
 
         #region 4. Seed Data
 
+        /// <summary>
+        /// Nạp danh sách sinh viên mẫu từ file JSON vào CSDL MongoDB bằng InsertMany
+        /// MongoDB: db.sinhvien.insertMany(list)
+        /// </summary>
         public async Task<int> SeedSampleDataAsync(string filePath)
         {
             if (!File.Exists(filePath)) return 0;
