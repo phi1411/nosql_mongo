@@ -1,0 +1,36 @@
+name: Build & Publish WPF Application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK 9.0
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore NuGet Packages
+      run: dotnet restore StudentManagementApp.csproj
+
+    - name: Build Solution (Release)
+      run: dotnet build StudentManagementApp.csproj --configuration Release --no-restore
+
+    - name: Publish Windows App
+      run: dotnet publish StudentManagementApp.csproj -c Release -r win-x64 --self-contained false -o ./publish
+
+    - name: Upload Build Artifact (Ready-to-run ZIP)
+      uses: actions/upload-artifact@v4
+      with:
+        name: StudentManagementApp-Windows
+        path: ./publish/
