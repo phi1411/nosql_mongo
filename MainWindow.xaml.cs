@@ -100,8 +100,11 @@ namespace StudentManagementApp
 
         private void ApplyFilter()
         {
-            string selectedClass = CboFilterClass.SelectedItem as string ?? "Tất cả các lớp";
-            string searchMaSv = TxtSearchMaSv.Text.Trim().ToLower();
+            if (_allStudents == null || DgSinhVien == null || TxtTotalGridCount == null)
+                return;
+
+            string selectedClass = CboFilterClass?.SelectedItem as string ?? "Tất cả các lớp";
+            string searchMaSv = TxtSearchMaSv?.Text.Trim().ToLower() ?? string.Empty;
             string sortBy = (CboSortBy?.SelectedItem as ComboBoxItem)?.Content?.ToString() ?? "Mặc định (Lớp & Họ tên)";
 
             var filtered = _allStudents.AsEnumerable();
