@@ -41,7 +41,7 @@
 
             <!-- Điểm số -->
             <TextBlock Text="Điểm số (Thang điểm 0.0 - 10.0) (*):" FontWeight="SemiBold" Foreground="#334155" Margin="0,0,0,4"/>
-            <TextBox x:Name="TxtDiem" Height="34" VerticalContentAlignment="Center" Padding="8,0" Text="8.0"/>
+            <TextBox x:Name="TxtDiem" Height="34" VerticalContentAlignment="Center" Padding="8,0"/>
         </StackPanel>
 
         <!-- Action Buttons -->

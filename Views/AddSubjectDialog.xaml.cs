@@ -107,8 +107,8 @@ namespace StudentManagementApp.Views
                 _isSelectingSuggestion = false;
 
                 BrdSuggestions.Visibility = Visibility.Collapsed;
+                TxtDiem.Text = string.Empty; // Xóa trắng để người dùng tự nhập điểm số mới
                 TxtDiem.Focus();
-                TxtDiem.SelectAll();
             }
         }
 
