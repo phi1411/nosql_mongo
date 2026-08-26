@@ -215,7 +215,35 @@
     "tuoi": 21,
     "phai": "Nam",
     "malop": "l05",
-    "ngoaingu": [],
-    "monhoc": []
+    "ngoaingu": ["Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 6.5 },
+      { "mamon": "laptrinh", "tenmon": "Lập trình Cơ bản", "diem": 7.0 }
+    ]
+  },
+  {
+    "masv": "sv019",
+    "hoten": "Nguyễn Hoàng Tiến",
+    "tuoi": 20,
+    "phai": "Nam",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Đức", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 9.2 },
+      { "mamon": "cloud", "tenmon": "Điện toán đám mây", "diem": 9.5 },
+      { "mamon": "security", "tenmon": "An toàn thông tin", "diem": 8.8 }
+    ]
+  },
+  {
+    "masv": "sv020",
+    "hoten": "Đặng Ngọc Uyên",
+    "tuoi": 21,
+    "phai": "Nữ",
+    "malop": "l05",
+    "ngoaingu": ["Tiếng Nga", "Tiếng Anh"],
+    "monhoc": [
+      { "mamon": "csdl", "tenmon": "Cơ sở dữ liệu", "diem": 8.6 },
+      { "mamon": "web", "tenmon": "Lập trình Web", "diem": 9.0 }
+    ]
   }
 ]
