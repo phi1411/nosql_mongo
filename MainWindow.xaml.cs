@@ -102,18 +102,35 @@ namespace StudentManagementApp
         {
             string selectedClass = CboFilterClass.SelectedItem as string ?? "Tất cả các lớp";
             string searchMaSv = TxtSearchMaSv.Text.Trim().ToLower();
+            string sortBy = (CboSortBy?.SelectedItem as ComboBoxItem)?.Content?.ToString() ?? "Mặc định (Lớp & Họ tên)";
 
             var filtered = _allStudents.AsEnumerable();
 
+            // 1. Lọc theo lớp
             if (selectedClass != "Tất cả các lớp" && !string.IsNullOrEmpty(selectedClass))
             {
                 filtered = filtered.Where(s => s.MaLop.Equals(selectedClass, StringComparison.OrdinalIgnoreCase));
             }
 
+            // 2. Tìm kiếm theo mã SV
             if (!string.IsNullOrWhiteSpace(searchMaSv))
             {
                 filtered = filtered.Where(s => s.MaSv.ToLower().Contains(searchMaSv));
             }
+
+            // 3. Sắp xếp theo tùy chọn
+            filtered = sortBy switch
+            {
+                "Mã SV (Tăng dần A ➔ Z)" => filtered.OrderBy(s => s.MaSv),
+                "Mã SV (Giảm dần Z ➔ A)" => filtered.OrderByDescending(s => s.MaSv),
+                "Họ và Tên (A ➔ Z)" => filtered.OrderBy(s => s.HoTen),
+                "Họ và Tên (Z ➔ A)" => filtered.OrderByDescending(s => s.HoTen),
+                "Điểm Trung Bình (Cao ➔ Thấp ⬇)" => filtered.OrderByDescending(s => s.DiemTrungBinh),
+                "Điểm Trung Bình (Thấp ➔ Cao ⬆)" => filtered.OrderBy(s => s.DiemTrungBinh),
+                "Tuổi (Tăng dần ⬆)" => filtered.OrderBy(s => s.Tuoi),
+                "Tuổi (Giảm dần ⬇)" => filtered.OrderByDescending(s => s.Tuoi),
+                _ => filtered.OrderBy(s => s.MaLop).ThenBy(s => s.HoTen)
+            };
 
             var list = filtered.ToList();
             DgSinhVien.ItemsSource = list;
@@ -160,9 +177,23 @@ namespace StudentManagementApp
             ApplyFilter();
         }
 
+        private void CboSortBy_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ApplyFilter();
+        }
+
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
             ApplyFilter();
+        }
+
+        private void BtnResetFilter_Click(object sender, RoutedEventArgs e)
+        {
+            TxtSearchMaSv.Text = string.Empty;
+            CboFilterClass.SelectedIndex = 0;
+            CboSortBy.SelectedIndex = 0;
+            ApplyFilter();
+            TxtStatusBar.Text = "Đã đặt lại toàn bộ bộ lọc và sắp xếp về mặc định.";
         }
 
         private async void BtnDeleteClass_Click(object sender, RoutedEventArgs e)
