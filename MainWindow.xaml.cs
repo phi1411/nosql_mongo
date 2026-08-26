@@ -122,22 +122,32 @@ namespace StudentManagementApp
             }
 
             // 3. Sắp xếp theo tùy chọn
+            var viCulture = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+            var viComparer = StringComparer.Create(viCulture, true);
+
             filtered = sortBy switch
             {
-                "Mã SV (Tăng dần A ➔ Z)" => filtered.OrderBy(s => s.MaSv),
-                "Mã SV (Giảm dần Z ➔ A)" => filtered.OrderByDescending(s => s.MaSv),
-                "Họ và Tên (A ➔ Z)" => filtered.OrderBy(s => s.HoTen),
-                "Họ và Tên (Z ➔ A)" => filtered.OrderByDescending(s => s.HoTen),
+                "Mã SV (Tăng dần A ➔ Z)" => filtered.OrderBy(s => s.MaSv, viComparer),
+                "Mã SV (Giảm dần Z ➔ A)" => filtered.OrderByDescending(s => s.MaSv, viComparer),
+                "Họ và Tên (A ➔ Z)" => filtered.OrderBy(s => GetTenGoi(s.HoTen), viComparer).ThenBy(s => s.HoTen, viComparer),
+                "Họ và Tên (Z ➔ A)" => filtered.OrderByDescending(s => GetTenGoi(s.HoTen), viComparer).ThenByDescending(s => s.HoTen, viComparer),
                 "Điểm Trung Bình (Cao ➔ Thấp ⬇)" => filtered.OrderByDescending(s => s.DiemTrungBinh),
                 "Điểm Trung Bình (Thấp ➔ Cao ⬆)" => filtered.OrderBy(s => s.DiemTrungBinh),
                 "Tuổi (Tăng dần ⬆)" => filtered.OrderBy(s => s.Tuoi),
                 "Tuổi (Giảm dần ⬇)" => filtered.OrderByDescending(s => s.Tuoi),
-                _ => filtered.OrderBy(s => s.MaLop).ThenBy(s => s.HoTen)
+                _ => filtered.OrderBy(s => s.MaLop, viComparer).ThenBy(s => GetTenGoi(s.HoTen), viComparer).ThenBy(s => s.HoTen, viComparer)
             };
 
             var list = filtered.ToList();
             DgSinhVien.ItemsSource = list;
             TxtTotalGridCount.Text = $"{list.Count} sinh viên";
+        }
+
+        private static string GetTenGoi(string hoTen)
+        {
+            if (string.IsNullOrWhiteSpace(hoTen)) return string.Empty;
+            var parts = hoTen.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            return parts.Length > 0 ? parts[^1] : hoTen;
         }
 
         private async Task LoadDashboardDataAsync()
