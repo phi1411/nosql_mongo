@@ -54,4 +54,14 @@ namespace StudentManagementApp.Models
         public List<TopSinhVienDto> Top5SinhVien { get; set; } = new();
         public List<PhanLoaiHocLucDto> PhanLoaiHocLuc { get; set; } = new();
     }
+
+    /// <summary>
+    /// DTO chứa thông tin Mã môn và Tên môn phục vụ chức năng gợi ý (Autocomplete)
+    /// </summary>
+    public class MonHocSuggestionDto
+    {
+        public string MaMon { get; set; } = string.Empty;
+        public string TenMon { get; set; } = string.Empty;
+        public string DisplayText => $"{MaMon} - {TenMon}";
+    }
 }

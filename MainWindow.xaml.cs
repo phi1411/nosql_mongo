@@ -425,7 +425,7 @@ namespace StudentManagementApp
         /// </summary>
         private async void BtnAddSubject_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new AddSubjectDialog { Owner = this };
+            var dialog = new AddSubjectDialog(_currentMonHoc.Select(m => m.MaMon)) { Owner = this };
             if (dialog.ShowDialog() == true && dialog.CreatedSubject != null)
             {
                 var newSubject = dialog.CreatedSubject;

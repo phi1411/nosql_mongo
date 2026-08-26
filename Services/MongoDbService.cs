@@ -249,6 +249,49 @@ namespace StudentManagementApp.Services
         }
 
         /// <summary>
+        /// Lấy danh sách toàn bộ các môn học (mamon, tenmon) duy nhất trong CSDL để làm gợi ý tìm kiếm (Autocomplete)
+        /// Pipeline MongoDB:
+        /// [
+        ///   { $unwind: "$monhoc" },
+        ///   { $group: { _id: "$monhoc.mamon", tenmon: { $first: "$monhoc.tenmon" } } },
+        ///   { $project: { _id: 0, mamon: "$_id", tenmon: 1 } },
+        ///   { $sort: { mamon: 1 } }
+        /// ]
+        /// </summary>
+        public async Task<List<MonHocSuggestionDto>> GetDistinctSubjectsAsync()
+        {
+            var pipeline = new BsonDocument[]
+            {
+                new("$unwind", "$monhoc"),
+                new("$group", new BsonDocument
+                {
+                    { "_id", "$monhoc.mamon" },
+                    { "tenmon", new BsonDocument("$first", "$monhoc.tenmon") }
+                }),
+                new("$project", new BsonDocument
+                {
+                    { "_id", 0 },
+                    { "mamon", "$_id" },
+                    { "tenmon", 1 }
+                }),
+                new("$sort", new BsonDocument("mamon", 1))
+            };
+
+            var results = await _sinhVienCollection.Aggregate<BsonDocument>(pipeline).ToListAsync();
+            var list = new List<MonHocSuggestionDto>();
+            foreach (var doc in results)
+            {
+                string mamon = doc.Contains("mamon") && !doc["mamon"].IsBsonNull ? doc["mamon"].AsString : "";
+                string tenmon = doc.Contains("tenmon") && !doc["tenmon"].IsBsonNull ? doc["tenmon"].AsString : "";
+                if (!string.IsNullOrWhiteSpace(mamon))
+                {
+                    list.Add(new MonHocSuggestionDto { MaMon = mamon, TenMon = tenmon });
+                }
+            }
+            return list;
+        }
+
+        /// <summary>
         /// Cập nhật điểm số của một môn học cụ thể dựa vào masv và mamon bằng Positional Operator ($)
         /// MongoDB: db.sinhvien.updateOne({ masv: "...", "monhoc.mamon": "..." }, { $set: { "monhoc.$.diem": diemMoi } })
         /// </summary>
